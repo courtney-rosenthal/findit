@@ -1,0 +1,17 @@
+Thu, 12 Jul 2012 16:19:37 -0500
+TODO.rdoc	Thu, 12 Jul 2012 16:10:44 -0500
+LICENSE.rdoc	Thu, 12 Jul 2012 16:10:44 -0500
+INSTALL.rdoc	Thu, 12 Jul 2012 16:10:44 -0500
+README.rdoc	Thu, 12 Jul 2012 16:10:44 -0500
+bin/findit-svc	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit.rb	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit/location.rb	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit/base-feature.rb	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit/local/travis.co.tx.us/feature/voting-place.rb	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit/local/austin.ci.tx.us/feature/base-facility.rb	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit/local/austin.ci.tx.us/feature/moon-tower.rb	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit/local/austin.ci.tx.us/feature/post-office.rb	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit/local/austin.ci.tx.us/feature/library.rb	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit/local/austin.ci.tx.us/feature/fire-station.rb	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit/app.rb	Thu, 12 Jul 2012 16:10:44 -0500
+lib/findit/map-marker.rb	Thu, 12 Jul 2012 16:10:44 -0500

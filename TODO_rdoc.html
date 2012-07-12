@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: TODO.rdoc [FindIt]</title>
+
+	<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./INSTALL_rdoc.html">INSTALL.rdoc</a></li>
+				
+					<li class="file"><a href="./LICENSE_rdoc.html">LICENSE.rdoc</a></li>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="./TODO_rdoc.html">TODO.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./FindIt.html">FindIt</a></li>
+				
+					<li><a href="./FindIt/App.html">FindIt::App</a></li>
+				
+					<li><a href="./FindIt/BaseFeature.html">FindIt::BaseFeature</a></li>
+				
+					<li><a href="./FindIt/Feature.html">FindIt::Feature</a></li>
+				
+					<li><a href="./FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a></li>
+				
+					<li><a href="./FindIt/Feature/Austin_CI_TX_US/BaseFacility.html">FindIt::Feature::Austin_CI_TX_US::BaseFacility</a></li>
+				
+					<li><a href="./FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
+				
+					<li><a href="./FindIt/Feature/Austin_CI_TX_US/Library.html">FindIt::Feature::Austin_CI_TX_US::Library</a></li>
+				
+					<li><a href="./FindIt/Feature/Austin_CI_TX_US/MoonTower.html">FindIt::Feature::Austin_CI_TX_US::MoonTower</a></li>
+				
+					<li><a href="./FindIt/Feature/Austin_CI_TX_US/PostOffice.html">FindIt::Feature::Austin_CI_TX_US::PostOffice</a></li>
+				
+					<li><a href="./FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a></li>
+				
+					<li><a href="./FindIt/Feature/Travis_CO_TX_US/VotingPlace.html">FindIt::Feature::Travis_CO_TX_US::VotingPlace</a></li>
+				
+					<li><a href="./FindIt/Location.html">FindIt::Location</a></li>
+				
+					<li><a href="./FindIt/MapMarker.html">FindIt::MapMarker</a></li>
+				
+					<li><a href="./NilClass.html">NilClass</a></li>
+				
+					<li><a href="./String.html">String</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1>To Do</h1>
+<p>
+Here are planned tasks for the &#8220;Find It Nearby&#8221; application.
+Please contact me if you have any feedback or are interested in working on
+any of these.
+</p>
+<ul>
+<li><p>
+Move credentials and parameters out of <a
+href="lib/findit/app_rb.html">lib/findit/app.rb</a> to an external
+configuration file.
+</p>
+</li>
+<li><p>
+Create a mechanism so that supported features can be selected or added
+through the external configuration file, rather than editing
+lib/findit/app.rb.
+</p>
+</li>
+<li><p>
+Better document the <a href="FindIt/Feature.html">FindIt::Feature</a>
+classes provided, so they might serve as better examples for adding new
+features. 
+</p>
+</li>
+<li><p>
+Document process for adding a new features (i.e. datasets).
+</p>
+</li>
+<li><p>
+Add support for &#8220;service region&#8221;, to limit area from which
+requests are processed.
+</p>
+</li>
+<li><p>
+Refactor the <a href="FindIt/MapMarker.html">FindIt::MapMarker</a> class.
+(I&#8217;m thinking of something like a FindIt::Asset::Graphic class to
+describe the marker images, and then FindIt::Asset::MapMarker to describe
+the marker and shadow graphics.)
+</p>
+</li>
+<li><p>
+Unit tests.
+</p>
+</li>
+<li><p>
+More datasets. More localities. More community interest.
+</p>
+</li>
+</ul>
+<p>
+Chip Rosenthal chip@unicom.com 12 July 2012
+</p>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+
