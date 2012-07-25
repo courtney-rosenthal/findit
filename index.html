@@ -1,249 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 
-	<title>FindIt</title>
+  <title>FindIt</title>
 
-	<link type="text/css" media="screen" href="rdoc.css" rel="stylesheet" />
+  <link type="text/css" media="screen" href="rdoc.css" rel="stylesheet" />
 
-	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/darkfish.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
 <body class="indexpage">
 
-	
-	<h1>FindIt</h1>
+  
+  <h1>FindIt</h1>
 
-	
-	<div id="main">
-		
-<p>
-This is based on work started at the Code for America Hack-a-Thon in
-Austin, TX on Feb 25, 2012.
-</p>
-<p>
-The &#8220;Find It Nearby&#8221; package includes:
-</p>
-<ul>
-<li><p>
-a mobile-friendly web application
-</p>
-</li>
-<li><p>
-a RESTful web service
-</p>
-</li>
-<li><p>
-tools for acquiring and processing specific public datasets
-</p>
-</li>
-</ul>
-<p>
-The &#8220;Find It Nearby&#8221; application tries to determine your
-current location, and then finds a number of features closest to you. The
-implementation for Austin currently locates the following features:
-</p>
-<ul>
-<li><p>
-Fire Station
-</p>
-</li>
-<li><p>
-Post Office
-</p>
-</li>
-<li><p>
-Library
-</p>
-</li>
-<li><p>
-Moon Tower
-</p>
-</li>
-<li><p>
-Voting Place
-</p>
-</li>
-</ul>
-<p>
-This application was created as a &#8220;proof of concept&#8221;
-demonstration of the value of public datasets. Wherever possible,
-I&#8217;ve tried to use public datasets that have been published by a local
-government and readily available (e.g. on a public data portal).
-</p>
-<p>
-Chip Rosenthal <br/> chip@unicom.com <br/> <a
-href="http://www.unicom.com">www.unicom.com</a>
-</p>
+  
+  <div id="main">
+    
 
-	</div>
-	
+<p>The “Find It Nearby” application identifies features in Austin, TX that are
+closest to you. The features it knows about are:</p>
+<ul><li>
+<p>Fire Station</p>
+</li><li>
+<p>Police Station</p>
+</li><li>
+<p>Post Office</p>
+</li><li>
+<p>Library</p>
+</li><li>
+<p>Moon Tower</p>
+</li><li>
+<p>Voting Place</p>
+</li></ul>
 
-	
-	
-	<h2>Files</h2>
-	<ul>
-		
-			<li class="file"><a href="INSTALL_rdoc.html">INSTALL.rdoc</a></li>
-		
-			<li class="file"><a href="LICENSE_rdoc.html">LICENSE.rdoc</a></li>
-		
-			<li class="file"><a href="README_rdoc.html">README.rdoc</a></li>
-		
-			<li class="file"><a href="TODO_rdoc.html">TODO.rdoc</a></li>
-		
-	</ul>
-	
+<p>The “Find It Nearby” package includes:</p>
+<ul><li>
+<p>a mobile-friendly web application</p>
+</li><li>
+<p>a RESTful web service</p>
+</li><li>
+<p>tools for acquiring and processing public datasets</p>
+</li></ul>
 
-	<h2 id="classes">Classes/Modules</h2>
-	<ul>
-		
-		<li class="module"><a href="FindIt.html">FindIt</a></li>
-		
-		<li class="class"><a href="FindIt/App.html">FindIt::App</a></li>
-		
-		<li class="class"><a href="FindIt/BaseFeature.html">FindIt::BaseFeature</a></li>
-		
-		<li class="module"><a href="FindIt/Feature.html">FindIt::Feature</a></li>
-		
-		<li class="module"><a href="FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a></li>
-		
-		<li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/BaseFacility.html">FindIt::Feature::Austin_CI_TX_US::BaseFacility</a></li>
-		
-		<li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
-		
-		<li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/Library.html">FindIt::Feature::Austin_CI_TX_US::Library</a></li>
-		
-		<li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/MoonTower.html">FindIt::Feature::Austin_CI_TX_US::MoonTower</a></li>
-		
-		<li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/PostOffice.html">FindIt::Feature::Austin_CI_TX_US::PostOffice</a></li>
-		
-		<li class="module"><a href="FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a></li>
-		
-		<li class="class"><a href="FindIt/Feature/Travis_CO_TX_US/VotingPlace.html">FindIt::Feature::Travis_CO_TX_US::VotingPlace</a></li>
-		
-		<li class="class"><a href="FindIt/Location.html">FindIt::Location</a></li>
-		
-		<li class="class"><a href="FindIt/MapMarker.html">FindIt::MapMarker</a></li>
-		
-		<li class="class"><a href="NilClass.html">NilClass</a></li>
-		
-		<li class="class"><a href="String.html">String</a></li>
-		
-	</ul>
+<p>You can view the application running at: <a
+href="http://nearby.webatx.us/">nearby.webatx.us/</a></p>
 
-	<h2 id="methods">Methods</h2>
-	<ul>
-		
-			<li><a href="FindIt/Feature/Travis_CO_TX_US/VotingPlace.html#method-c-closest">::closest &mdash; FindIt::Feature::Travis_CO_TX_US::VotingPlace</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-c-closest">::closest &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/FireStation.html#method-c-closest">::closest &mdash; FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/MoonTower.html#method-c-closest">::closest &mdash; FindIt::Feature::Austin_CI_TX_US::MoonTower</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/BaseFacility.html#method-c-closest">::closest &mdash; FindIt::Feature::Austin_CI_TX_US::BaseFacility</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-c-datafile">::datafile &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/Library.html#method-c-facility_title">::facility_title &mdash; FindIt::Feature::Austin_CI_TX_US::Library</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/PostOffice.html#method-c-facility_title">::facility_title &mdash; FindIt::Feature::Austin_CI_TX_US::PostOffice</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/BaseFacility.html#method-c-facility_title">::facility_title &mdash; FindIt::Feature::Austin_CI_TX_US::BaseFacility</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/PostOffice.html#method-c-facility_type">::facility_type &mdash; FindIt::Feature::Austin_CI_TX_US::PostOffice</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/Library.html#method-c-facility_type">::facility_type &mdash; FindIt::Feature::Austin_CI_TX_US::Library</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/BaseFacility.html#method-c-facility_type">::facility_type &mdash; FindIt::Feature::Austin_CI_TX_US::BaseFacility</a></li>
-		
-			<li><a href="FindIt/Feature/Travis_CO_TX_US/VotingPlace.html#method-c-load_dataset">::load_dataset &mdash; FindIt::Feature::Travis_CO_TX_US::VotingPlace</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/FireStation.html#method-c-load_dataset">::load_dataset &mdash; FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/FireStation.html#method-c-marker">::marker &mdash; FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/PostOffice.html#method-c-marker">::marker &mdash; FindIt::Feature::Austin_CI_TX_US::PostOffice</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/Library.html#method-c-marker">::marker &mdash; FindIt::Feature::Austin_CI_TX_US::Library</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/MoonTower.html#method-c-marker">::marker &mdash; FindIt::Feature::Austin_CI_TX_US::MoonTower</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-c-marker">::marker &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="FindIt/Feature/Travis_CO_TX_US/VotingPlace.html#method-c-marker">::marker &mdash; FindIt::Feature::Travis_CO_TX_US::VotingPlace</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/Library.html#method-c-marker_shadow">::marker_shadow &mdash; FindIt::Feature::Austin_CI_TX_US::Library</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-c-marker_shadow">::marker_shadow &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="FindIt/Feature/Travis_CO_TX_US/VotingPlace.html#method-c-marker_shadow">::marker_shadow &mdash; FindIt::Feature::Travis_CO_TX_US::VotingPlace</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/MoonTower.html#method-c-marker_shadow">::marker_shadow &mdash; FindIt::Feature::Austin_CI_TX_US::MoonTower</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/PostOffice.html#method-c-marker_shadow">::marker_shadow &mdash; FindIt::Feature::Austin_CI_TX_US::PostOffice</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/FireStation.html#method-c-marker_shadow">::marker_shadow &mdash; FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
-		
-			<li><a href="FindIt/App.html#method-c-nearby">::nearby &mdash; FindIt::App</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-c-new">::new &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="FindIt/MapMarker.html#method-c-new">::new &mdash; FindIt::MapMarker</a></li>
-		
-			<li><a href="FindIt/Location.html#method-c-new">::new &mdash; FindIt::Location</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/FireStation.html#method-c-type">::type &mdash; FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/MoonTower.html#method-c-type">::type &mdash; FindIt::Feature::Austin_CI_TX_US::MoonTower</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/PostOffice.html#method-c-type">::type &mdash; FindIt::Feature::Austin_CI_TX_US::PostOffice</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-c-type">::type &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="FindIt/Feature/Austin_CI_TX_US/Library.html#method-c-type">::type &mdash; FindIt::Feature::Austin_CI_TX_US::Library</a></li>
-		
-			<li><a href="FindIt/Feature/Travis_CO_TX_US/VotingPlace.html#method-c-type">::type &mdash; FindIt::Feature::Travis_CO_TX_US::VotingPlace</a></li>
-		
-			<li><a href="String.html#method-i-capitalize_words">#capitalize_words &mdash; String</a></li>
-		
-			<li><a href="FindIt/Location.html#method-i-distance">#distance &mdash; FindIt::Location</a></li>
-		
-			<li><a href="NilClass.html#method-i-empty%3F">#empty? &mdash; NilClass</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-i-hint">#hint &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="String.html#method-i-html_safe">#html_safe &mdash; String</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-i-info">#info &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="FindIt/Location.html#method-i-lat">#lat &mdash; FindIt::Location</a></li>
-		
-			<li><a href="FindIt/Location.html#method-i-lng">#lng &mdash; FindIt::Location</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-i-marker">#marker &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-i-marker_shadow">#marker_shadow &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="FindIt/BaseFeature.html#method-i-to_h">#to_h &mdash; FindIt::BaseFeature</a></li>
-		
-			<li><a href="FindIt/MapMarker.html#method-i-to_h">#to_h &mdash; FindIt::MapMarker</a></li>
-		
-	</ul>
+<p>The source code is published at: <a
+href="https://github.com/chip-rosenthal/findit">github.com/chip-rosenthal/findit</a></p>
 
-	<div id="validator-badges">
-		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-			Rdoc Generator</a> 1.1.6</small>.</p>
-	</div>
+<p>This application was created to demonstrate the value of open government
+data, and the sorts of tools that can be build on public datasets. This is
+based on work from the Code for America Hack-a-Thon in Austin, TX on Feb
+25, 2012.</p>
+
+<p>Chip Rosenthal | chip@unicom.com | <a
+href="http://www.unicom.com">www.unicom.com</a></p>
+
+  </div>
+  
+
+  
+  
+  <h2>Files</h2>
+  <ul>
+    
+      <li class="file"><a href="INSTALL_rdoc.html">INSTALL.rdoc</a></li>
+    
+      <li class="file"><a href="LICENSE_rdoc.html">LICENSE.rdoc</a></li>
+    
+      <li class="file"><a href="README_rdoc.html">README.rdoc</a></li>
+    
+      <li class="file"><a href="TODO_rdoc.html">TODO.rdoc</a></li>
+    
+  </ul>
+  
+
+  <h2 id="classes">Classes/Modules</h2>
+  <ul>
+    
+    <li class="module"><a href="FindIt.html">FindIt</a></li>
+    
+    <li class="class"><a href="FindIt/App.html">FindIt::App</a></li>
+    
+    <li class="class"><a href="FindIt/BaseFeature.html">FindIt::BaseFeature</a></li>
+    
+    <li class="module"><a href="FindIt/Feature.html">FindIt::Feature</a></li>
+    
+    <li class="module"><a href="FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a></li>
+    
+    <li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html">FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a></li>
+    
+    <li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/AbstractHistorical.html">FindIt::Feature::Austin_CI_TX_US::AbstractHistorical</a></li>
+    
+    <li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/FacilityFactory.html">FindIt::Feature::Austin_CI_TX_US::FacilityFactory</a></li>
+    
+    <li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
+    
+    <li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/HistoricalFactory.html">FindIt::Feature::Austin_CI_TX_US::HistoricalFactory</a></li>
+    
+    <li class="class"><a href="FindIt/Feature/Austin_CI_TX_US/PoliceStation.html">FindIt::Feature::Austin_CI_TX_US::PoliceStation</a></li>
+    
+    <li class="class"><a href="FindIt/Feature/FlatDataSet.html">FindIt::Feature::FlatDataSet</a></li>
+    
+    <li class="module"><a href="FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a></li>
+    
+    <li class="class"><a href="FindIt/Feature/Travis_CO_TX_US/AbstractVotingPlace.html">FindIt::Feature::Travis_CO_TX_US::AbstractVotingPlace</a></li>
+    
+    <li class="class"><a href="FindIt/Feature/Travis_CO_TX_US/VotingPlaceFactory.html">FindIt::Feature::Travis_CO_TX_US::VotingPlaceFactory</a></li>
+    
+    <li class="class"><a href="FindIt/Location.html">FindIt::Location</a></li>
+    
+    <li class="class"><a href="FindIt/MapMarker.html">FindIt::MapMarker</a></li>
+    
+    <li class="module"><a href="FindIt/RakeDefs.html">FindIt::RakeDefs</a></li>
+    
+    <li class="class"><a href="NilClass.html">NilClass</a></li>
+    
+    <li class="class"><a href="String.html">String</a></li>
+    
+  </ul>
+
+  <h2 id="methods">Methods</h2>
+  <ul>
+    
+      <li><a href="FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html#method-c-closest">::closest &mdash; FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a></li>
+    
+      <li><a href="FindIt/BaseFeature.html#method-c-closest">::closest &mdash; FindIt::BaseFeature</a></li>
+    
+      <li><a href="FindIt/Feature/Austin_CI_TX_US/PoliceStation.html#method-c-closest">::closest &mdash; FindIt::Feature::Austin_CI_TX_US::PoliceStation</a></li>
+    
+      <li><a href="FindIt/Feature/Austin_CI_TX_US/AbstractHistorical.html#method-c-closest">::closest &mdash; FindIt::Feature::Austin_CI_TX_US::AbstractHistorical</a></li>
+    
+      <li><a href="FindIt/Feature/Travis_CO_TX_US/AbstractVotingPlace.html#method-c-closest">::closest &mdash; FindIt::Feature::Travis_CO_TX_US::AbstractVotingPlace</a></li>
+    
+      <li><a href="FindIt/Feature/Austin_CI_TX_US/FireStation.html#method-c-closest">::closest &mdash; FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
+    
+      <li><a href="FindIt/Feature/Travis_CO_TX_US/VotingPlaceFactory.html#method-c-create">::create &mdash; FindIt::Feature::Travis_CO_TX_US::VotingPlaceFactory</a></li>
+    
+      <li><a href="FindIt/Feature/Austin_CI_TX_US/HistoricalFactory.html#method-c-create">::create &mdash; FindIt::Feature::Austin_CI_TX_US::HistoricalFactory</a></li>
+    
+      <li><a href="FindIt/Feature/Austin_CI_TX_US/FacilityFactory.html#method-c-create">::create &mdash; FindIt::Feature::Austin_CI_TX_US::FacilityFactory</a></li>
+    
+      <li><a href="FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html#method-c-facility_title">::facility_title &mdash; FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a></li>
+    
+      <li><a href="FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html#method-c-facility_type">::facility_type &mdash; FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a></li>
+    
+      <li><a href="FindIt/Feature/FlatDataSet.html#method-c-load">::load &mdash; FindIt::Feature::FlatDataSet</a></li>
+    
+      <li><a href="FindIt/BaseFeature.html#method-c-marker">::marker &mdash; FindIt::BaseFeature</a></li>
+    
+      <li><a href="FindIt/BaseFeature.html#method-c-marker_shadow">::marker_shadow &mdash; FindIt::BaseFeature</a></li>
+    
+      <li><a href="FindIt/BaseFeature.html#method-c-new">::new &mdash; FindIt::BaseFeature</a></li>
+    
+      <li><a href="FindIt/App.html#method-c-new">::new &mdash; FindIt::App</a></li>
+    
+      <li><a href="FindIt/Feature/FlatDataSet.html#method-c-new">::new &mdash; FindIt::Feature::FlatDataSet</a></li>
+    
+      <li><a href="FindIt/MapMarker.html#method-c-new">::new &mdash; FindIt::MapMarker</a></li>
+    
+      <li><a href="FindIt/Location.html#method-c-new">::new &mdash; FindIt::Location</a></li>
+    
+      <li><a href="FindIt/Feature/FlatDataSet.html#method-c-path">::path &mdash; FindIt::Feature::FlatDataSet</a></li>
+    
+      <li><a href="FindIt/Feature/Travis_CO_TX_US/AbstractVotingPlace.html#method-c-set_election">::set_election &mdash; FindIt::Feature::Travis_CO_TX_US::AbstractVotingPlace</a></li>
+    
+      <li><a href="FindIt/BaseFeature.html#method-c-type">::type &mdash; FindIt::BaseFeature</a></li>
+    
+      <li><a href="FindIt/Feature/FlatDataSet.html#method-i-5B-5D">#[] &mdash; FindIt::Feature::FlatDataSet</a></li>
+    
+      <li><a href="String.html#method-i-capitalize_words">#capitalize_words &mdash; String</a></li>
+    
+      <li><a href="FindIt/Feature/FlatDataSet.html#method-i-closest">#closest &mdash; FindIt::Feature::FlatDataSet</a></li>
+    
+      <li><a href="FindIt/RakeDefs.html#method-i-db_create_index">#db_create_index &mdash; FindIt::RakeDefs</a></li>
+    
+      <li><a href="FindIt/RakeDefs.html#method-i-db_drop_table">#db_drop_table &mdash; FindIt::RakeDefs</a></li>
+    
+      <li><a href="FindIt/RakeDefs.html#method-i-db_execute">#db_execute &mdash; FindIt::RakeDefs</a></li>
+    
+      <li><a href="FindIt/RakeDefs.html#method-i-db_load_shapefile">#db_load_shapefile &mdash; FindIt::RakeDefs</a></li>
+    
+      <li><a href="FindIt/RakeDefs.html#method-i-db_table_exists-3F">#db_table_exists? &mdash; FindIt::RakeDefs</a></li>
+    
+      <li><a href="FindIt/RakeDefs.html#method-i-db_vacuum">#db_vacuum &mdash; FindIt::RakeDefs</a></li>
+    
+      <li><a href="FindIt/Location.html#method-i-distance">#distance &mdash; FindIt::Location</a></li>
+    
+      <li><a href="NilClass.html#method-i-empty-3F">#empty? &mdash; NilClass</a></li>
+    
+      <li><a href="FindIt/BaseFeature.html#method-i-hint">#hint &mdash; FindIt::BaseFeature</a></li>
+    
+      <li><a href="String.html#method-i-html_safe">#html_safe &mdash; String</a></li>
+    
+      <li><a href="FindIt/BaseFeature.html#method-i-info">#info &mdash; FindIt::BaseFeature</a></li>
+    
+      <li><a href="FindIt/Location.html#method-i-lat">#lat &mdash; FindIt::Location</a></li>
+    
+      <li><a href="FindIt/Location.html#method-i-lng">#lng &mdash; FindIt::Location</a></li>
+    
+      <li><a href="FindIt/BaseFeature.html#method-i-marker">#marker &mdash; FindIt::BaseFeature</a></li>
+    
+      <li><a href="FindIt/BaseFeature.html#method-i-marker_shadow">#marker_shadow &mdash; FindIt::BaseFeature</a></li>
+    
+      <li><a href="FindIt/App.html#method-i-nearby">#nearby &mdash; FindIt::App</a></li>
+    
+      <li><a href="FindIt/BaseFeature.html#method-i-to_h">#to_h &mdash; FindIt::BaseFeature</a></li>
+    
+      <li><a href="FindIt/MapMarker.html#method-i-to_h">#to_h &mdash; FindIt::MapMarker</a></li>
+    
+  </ul>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
 </body>
 </html>

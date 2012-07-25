@@ -1,1070 +1,911 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 
-	<title>Class: FindIt::BaseFeature</title>
+  <title>Class: FindIt::BaseFeature</title>
 
-	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
 
-	<script src="../js/jquery.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="../js/thickbox-compressed.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="../js/quicksearch.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="../js/darkfish.js" type="text/javascript"
-		charset="utf-8"></script>
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
-<body class="class">
+<body id="top" class="class">
 
-	<div id="metadata">
-		<div id="home-metadata">
-			<div id="home-section" class="section">
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
         <h3 class="section-header">
           <a href="../index.html">Home</a>
           <a href="../index.html#classes">Classes</a>
           <a href="../index.html#methods">Methods</a>
         </h3>
-			</div>
-		</div>
+      </div>
+    </div>
 
-		<div id="file-metadata">
-			<div id="file-list-section" class="section">
-				<h3 class="section-header">In Files</h3>
-				<div class="section-body">
-					<ul>
-					
-						<li><a href="../lib/findit/base-feature_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/findit/base-feature.rb">lib/findit/base-feature.rb</a></li>
-					
-					</ul>
-				</div>
-			</div>
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/findit/base-feature_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/findit/base-feature.rb">lib/findit/base-feature.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
 
-			
-		</div>
+      
+    </div>
 
-		<div id="class-metadata">
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Object</p>
+        
+      </div>
+      
 
-			<!-- Parent Class -->
-			
-			<div id="parent-class-section" class="section">
-				<h3 class="section-header">Parent</h3>
-				
-				<p class="link">Object</p>
-				
-			</div>
-			
+      
 
-			<!-- Namespace Contents -->
-			
+      
 
-			<!-- Method Quickref -->
-			
-			<div id="method-list-section" class="section">
-				<h3 class="section-header">Methods</h3>
-				<ul class="link-list">
-					
-					<li><a href="#method-c-closest">::closest</a></li>
-					
-					<li><a href="#method-c-datafile">::datafile</a></li>
-					
-					<li><a href="#method-c-marker">::marker</a></li>
-					
-					<li><a href="#method-c-marker_shadow">::marker_shadow</a></li>
-					
-					<li><a href="#method-c-new">::new</a></li>
-					
-					<li><a href="#method-c-type">::type</a></li>
-					
-					<li><a href="#method-i-hint">#hint</a></li>
-					
-					<li><a href="#method-i-info">#info</a></li>
-					
-					<li><a href="#method-i-marker">#marker</a></li>
-					
-					<li><a href="#method-i-marker_shadow">#marker_shadow</a></li>
-					
-					<li><a href="#method-i-to_h">#to_h</a></li>
-					
-				</ul>
-			</div>
-			
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-closest">::closest</a></li>
+          
+          <li><a href="#method-c-marker">::marker</a></li>
+          
+          <li><a href="#method-c-marker_shadow">::marker_shadow</a></li>
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-c-type">::type</a></li>
+          
+          <li><a href="#method-i-hint">#hint</a></li>
+          
+          <li><a href="#method-i-info">#info</a></li>
+          
+          <li><a href="#method-i-marker">#marker</a></li>
+          
+          <li><a href="#method-i-marker_shadow">#marker_shadow</a></li>
+          
+          <li><a href="#method-i-to_h">#to_h</a></li>
+          
+        </ul>
+      </div>
+      
 
-			<!-- Included Modules -->
-			
-		</div>
+      
+    </div>
 
-		<div id="project-metadata">
-			
-			
-			<div id="fileindex-section" class="section project-section">
-				<h3 class="section-header">Files</h3>
-				<ul>
-				
-					<li class="file"><a href="../INSTALL_rdoc.html">INSTALL.rdoc</a></li>
-				
-					<li class="file"><a href="../LICENSE_rdoc.html">LICENSE.rdoc</a></li>
-				
-					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
-				
-					<li class="file"><a href="../TODO_rdoc.html">TODO.rdoc</a></li>
-				
-				</ul>
-			</div>
-			
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../INSTALL_rdoc.html">INSTALL.rdoc</a></li>
+        
+          <li class="file"><a href="../LICENSE_rdoc.html">LICENSE.rdoc</a></li>
+        
+          <li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+        
+          <li class="file"><a href="../TODO_rdoc.html">TODO.rdoc</a></li>
+        
+        </ul>
+      </div>
+      
 
-			<div id="classindex-section" class="section project-section">
-				<h3 class="section-header">Class Index
-					<span class="search-toggle"><img src="../images/find.png"
-						height="16" width="16" alt="[+]"
-						title="show/hide quicksearch" /></span></h3>
-				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-				<fieldset>
-					<legend>Quicksearch</legend>
-					<input type="text" name="quicksearch" value=""
-						class="quicksearch-field" />
-				</fieldset>
-				</form>
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
 
-				<ul class="link-list">
-				
-					<li><a href="../FindIt.html">FindIt</a></li>
-				
-					<li><a href="../FindIt/App.html">FindIt::App</a></li>
-				
-					<li><a href="../FindIt/BaseFeature.html">FindIt::BaseFeature</a></li>
-				
-					<li><a href="../FindIt/Feature.html">FindIt::Feature</a></li>
-				
-					<li><a href="../FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a></li>
-				
-					<li><a href="../FindIt/Feature/Austin_CI_TX_US/BaseFacility.html">FindIt::Feature::Austin_CI_TX_US::BaseFacility</a></li>
-				
-					<li><a href="../FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
-				
-					<li><a href="../FindIt/Feature/Austin_CI_TX_US/Library.html">FindIt::Feature::Austin_CI_TX_US::Library</a></li>
-				
-					<li><a href="../FindIt/Feature/Austin_CI_TX_US/MoonTower.html">FindIt::Feature::Austin_CI_TX_US::MoonTower</a></li>
-				
-					<li><a href="../FindIt/Feature/Austin_CI_TX_US/PostOffice.html">FindIt::Feature::Austin_CI_TX_US::PostOffice</a></li>
-				
-					<li><a href="../FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a></li>
-				
-					<li><a href="../FindIt/Feature/Travis_CO_TX_US/VotingPlace.html">FindIt::Feature::Travis_CO_TX_US::VotingPlace</a></li>
-				
-					<li><a href="../FindIt/Location.html">FindIt::Location</a></li>
-				
-					<li><a href="../FindIt/MapMarker.html">FindIt::MapMarker</a></li>
-				
-					<li><a href="../NilClass.html">NilClass</a></li>
-				
-					<li><a href="../String.html">String</a></li>
-				
-				</ul>
-				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
-			</div>
+        <ul class="link-list">
+        
+          <li><a href="../FindIt.html">FindIt</a></li>
+        
+          <li><a href="../FindIt/App.html">FindIt::App</a></li>
+        
+          <li><a href="../FindIt/BaseFeature.html">FindIt::BaseFeature</a></li>
+        
+          <li><a href="../FindIt/Feature.html">FindIt::Feature</a></li>
+        
+          <li><a href="../FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a></li>
+        
+          <li><a href="../FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html">FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a></li>
+        
+          <li><a href="../FindIt/Feature/Austin_CI_TX_US/AbstractHistorical.html">FindIt::Feature::Austin_CI_TX_US::AbstractHistorical</a></li>
+        
+          <li><a href="../FindIt/Feature/Austin_CI_TX_US/FacilityFactory.html">FindIt::Feature::Austin_CI_TX_US::FacilityFactory</a></li>
+        
+          <li><a href="../FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
+        
+          <li><a href="../FindIt/Feature/Austin_CI_TX_US/HistoricalFactory.html">FindIt::Feature::Austin_CI_TX_US::HistoricalFactory</a></li>
+        
+          <li><a href="../FindIt/Feature/Austin_CI_TX_US/PoliceStation.html">FindIt::Feature::Austin_CI_TX_US::PoliceStation</a></li>
+        
+          <li><a href="../FindIt/Feature/FlatDataSet.html">FindIt::Feature::FlatDataSet</a></li>
+        
+          <li><a href="../FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a></li>
+        
+          <li><a href="../FindIt/Feature/Travis_CO_TX_US/AbstractVotingPlace.html">FindIt::Feature::Travis_CO_TX_US::AbstractVotingPlace</a></li>
+        
+          <li><a href="../FindIt/Feature/Travis_CO_TX_US/VotingPlaceFactory.html">FindIt::Feature::Travis_CO_TX_US::VotingPlaceFactory</a></li>
+        
+          <li><a href="../FindIt/Location.html">FindIt::Location</a></li>
+        
+          <li><a href="../FindIt/MapMarker.html">FindIt::MapMarker</a></li>
+        
+          <li><a href="../FindIt/RakeDefs.html">FindIt::RakeDefs</a></li>
+        
+          <li><a href="../NilClass.html">NilClass</a></li>
+        
+          <li><a href="../String.html">String</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
 
-			
-		</div>
-	</div>
+      
+    </div>
+  </div>
 
-	<div id="documentation">
-		<h1 class="class">FindIt::BaseFeature</h1>
+  <div id="documentation">
+    <h1 class="class">FindIt::BaseFeature</h1>
 
-		<div id="description">
-			<p>
-Abstract class for a map feature.
-</p>
-<p>
-To implement a feature, the derived class must override the following
-methods:
-</p>
-<ul>
-<li><p>
-self.type
-</p>
-</li>
-<li><p>
-self.marker
-</p>
-</li>
-<li><p>
-self.marker_shadow
-</p>
-</li>
-<li><p>
-self.closest
-</p>
-</li>
-</ul>
+    <div id="description" class="description">
+      
+<p>Abstract class for a map feature.</p>
 
-		</div>
+<p>To implement a feature, the derived class must:</p>
+<ul><li>
+<p>Either define <em>@type</em> class instance variable or override
+<em>self.type</em> method.</p>
+</li><li>
+<p>Either define <em>@marker</em> class instance variable or override
+<em>self.marker</em> method.</p>
+</li><li>
+<p>Either define <em>@marker_shadow</em> class instance variable or override
+<em>self.marker_shadow</em> method.</p>
+</li><li>
+<p>Override <em>self.closest</em> method.</p>
+</li></ul>
 
-		<!-- Constants -->
-		
+<p>Example:</p>
 
-		<!-- Attributes -->
-		
-		<div id="attribute-method-details" class="method-section section">
-			<h3 class="section-header">Attributes</h3>
+<pre>class Library &lt; FindIt::BaseFeature
+  @type = :LIBRARY
+  @marker = FindIt::MapMarker.new(
+    &quot;http://maps.google.com/mapfiles/kml/pal3/icon56.png&quot;,
+    :height =&gt; 32, :width =&gt; 32).freeze
+  @marker_shadow = FindIt::MapMarker.new(
+    &quot;http://maps.google.com/mapfiles/kml/pal3/icon56s.png&quot;,
+    :height =&gt; 32, :width =&gt; 59).freeze
+  def self.closest(loc)
+       . 
+       . 
+       . 
+  end
+end</pre>
 
-			
-			<div id="location-attribute-method" class="method-detail">
-				<a name="location"></a>
-				
-				<div class="method-heading attribute-method-heading">
-					<span class="method-name">location</span><span
-						class="attribute-access-type">[R]</span>
-				</div>
+    </div><!-- description -->
 
-				<div class="method-description">
-				
-				<p>
-A <a href="Location.html">FindIt::Location</a> instance that provides the
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="address-attribute-method" class="method-detail">
+          <a name="address"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">address</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          <p>The street address of this feature. This value is required and will always
+be defined.</p>
+          
+          </div>
+        </div>
+        
+        <div id="city-attribute-method" class="method-detail">
+          <a name="city"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">city</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          <p>The city portion of the address of this feature. This value is required and
+will always be defined.</p>
+          
+          </div>
+        </div>
+        
+        <div id="distance-attribute-method" class="method-detail">
+          <a name="distance"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">distance</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          <p>A Float value containing the distance (in miles) from the origin point to
+this feature.</p>
+          
+          </div>
+        </div>
+        
+        <div id="link-attribute-method" class="method-detail">
+          <a name="link"></a>
+          
+          <a name="link="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">link</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          <p>A URL to associate with this feature, such as a home page. This value is
+optional and may be nil.</p>
+          
+          </div>
+        </div>
+        
+        <div id="location-attribute-method" class="method-detail">
+          <a name="location"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">location</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          <p>A <a href="Location.html">FindIt::Location</a> instance that provides the
 geographical location (latitude, longitude) of this feature. This value is
-required and will always be defined.
-</p>
-				
-				</div>
-			</div>
-			
-			<div id="title-attribute-method" class="method-detail">
-				<a name="title"></a>
-				
-				<div class="method-heading attribute-method-heading">
-					<span class="method-name">title</span><span
-						class="attribute-access-type">[R]</span>
-				</div>
+required and will always be defined.</p>
+          
+          </div>
+        </div>
+        
+        <div id="name-attribute-method" class="method-detail">
+          <a name="name"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">name</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
 
-				<div class="method-description">
-				
-				<p>
-A title for this feature, such as &#8220;Closest library&#8221;. This value
-is required and will always be defined.
-</p>
-				
-				</div>
-			</div>
-			
-			<div id="name-attribute-method" class="method-detail">
-				<a name="name"></a>
-				
-				<div class="method-heading attribute-method-heading">
-					<span class="method-name">name</span><span
-						class="attribute-access-type">[R]</span>
-				</div>
+          <div class="method-description">
+          
+          <p>The name of this feature, such as “Grouch Marx Middle School”. This value
+is optional and may be nil.</p>
+          
+          </div>
+        </div>
+        
+        <div id="note-attribute-method" class="method-detail">
+          <a name="note"></a>
+          
+          <a name="note="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">note</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
 
-				<div class="method-description">
-				
-				<p>
-The name of this feature, such as &#8220;Grouch Marx Middle School&#8221;.
-This value is optional and may be nil.
-</p>
-				
-				</div>
-			</div>
-			
-			<div id="address-attribute-method" class="method-detail">
-				<a name="address"></a>
-				
-				<div class="method-heading attribute-method-heading">
-					<span class="method-name">address</span><span
-						class="attribute-access-type">[R]</span>
-				</div>
+          <div class="method-description">
+          
+          <p>An optional note with additional information about this feature. This value
+is optional and may be nil.</p>
+          
+          </div>
+        </div>
+        
+        <div id="state-attribute-method" class="method-detail">
+          <a name="state"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">state</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
 
-				<div class="method-description">
-				
-				<p>
-The street address of this feature. This value is required and will always
-be defined.
-</p>
-				
-				</div>
-			</div>
-			
-			<div id="city-attribute-method" class="method-detail">
-				<a name="city"></a>
-				
-				<div class="method-heading attribute-method-heading">
-					<span class="method-name">city</span><span
-						class="attribute-access-type">[R]</span>
-				</div>
+          <div class="method-description">
+          
+          <p>The state portion of the address of this feature. This value is required
+and will always be defined.</p>
+          
+          </div>
+        </div>
+        
+        <div id="title-attribute-method" class="method-detail">
+          <a name="title"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">title</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
 
-				<div class="method-description">
-				
-				<p>
-The city portion of the address of this feature. This value is required and
-will always be defined.
-</p>
-				
-				</div>
-			</div>
-			
-			<div id="state-attribute-method" class="method-detail">
-				<a name="state"></a>
-				
-				<div class="method-heading attribute-method-heading">
-					<span class="method-name">state</span><span
-						class="attribute-access-type">[R]</span>
-				</div>
+          <div class="method-description">
+          
+          <p>A title for this feature, such as “Closest library”. This value is required
+and will always be defined.</p>
+          
+          </div>
+        </div>
+        
+        <div id="zip-attribute-method" class="method-detail">
+          <a name="zip"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">zip</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
 
-				<div class="method-description">
-				
-				<p>
-The state portion of the address of this feature. This value is required
-and will always be defined.
-</p>
-				
-				</div>
-			</div>
-			
-			<div id="zip-attribute-method" class="method-detail">
-				<a name="zip"></a>
-				
-				<div class="method-heading attribute-method-heading">
-					<span class="method-name">zip</span><span
-						class="attribute-access-type">[R]</span>
-				</div>
+          <div class="method-description">
+          
+          <p>The postal code portion of the address of this feature. This value is
+optional and may be nil.</p>
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
 
-				<div class="method-description">
-				
-				<p>
-The postal code portion of the address of this feature. This value is
-optional and may be nil.
-</p>
-				
-				</div>
-			</div>
-			
-			<div id="link-attribute-method" class="method-detail">
-				<a name="link"></a>
-				
-				<a name="link="></a>
-				
-				<div class="method-heading attribute-method-heading">
-					<span class="method-name">link</span><span
-						class="attribute-access-type">[RW]</span>
-				</div>
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
 
-				<div class="method-description">
-				
-				<p>
-A URL to associate with this feature, such as a home page. This value is
-optional and may be nil.
-</p>
-				
-				</div>
-			</div>
-			
-			<div id="note-attribute-method" class="method-detail">
-				<a name="note"></a>
-				
-				<a name="note="></a>
-				
-				<div class="method-heading attribute-method-heading">
-					<span class="method-name">note</span><span
-						class="attribute-access-type">[RW]</span>
-				</div>
+      
+        <div id="closest-method" class="method-detail ">
+          <a name="method-c-closest"></a>
 
-				<div class="method-description">
-				
-				<p>
-An optional note with additional information about this feature. This value
-is optional and may be nil.
-</p>
-				
-				</div>
-			</div>
-			
-			<div id="distance-attribute-method" class="method-detail">
-				<a name="distance"></a>
-				
-				<div class="method-heading attribute-method-heading">
-					<span class="method-name">distance</span><span
-						class="attribute-access-type">[R]</span>
-				</div>
+          
+          <div class="method-heading">
+            <span class="method-name">closest</span><span
+              class="method-args">(origin)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
 
-				<div class="method-description">
-				
-				<p>
-A Float value containing the distance (in miles) from the origin point to
-this feature.
-</p>
-				
-				</div>
-			</div>
-			
-		</div>
-		
+          <div class="method-description">
+            
+            <p>Locate the feature closest to the origin.</p>
 
-		<!-- Methods -->
-		
-		<div id="public-class-method-details" class="method-section section">
-			<h3 class="section-header">Public Class Methods</h3>
+<p><b>This is an abstract method that must be overridden in the derived
+class.</b></p>
 
-		
-			<div id="closest-method" class="method-detail ">
-				<a name="method-c-closest"></a>
+<p>Parameter:</p>
+<ul><li>
+<p>origin – A <a href="Location.html">FindIt::Location</a> instance that is
+the origin point for the search.</p>
+</li></ul>
 
-				<div class="method-heading">
-				
-					<span class="method-name">closest</span><span
-						class="method-args">(origin)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+<p>Returns: The instance of this feature that is closest to the origin point
+(<a href="BaseFeature.html">FindIt::BaseFeature</a>).</p>
+            
 
-				<div class="method-description">
-					
-					<p>
-Locate the feature closest to the origin.
-</p>
-<p>
-<b>This is an abstract method that must be overridden in the derived
-class.</b>
-</p>
-<p>
-Parameter:
-</p>
-<ul>
-<li><p>
-origin &#8212; A <a href="Location.html">FindIt::Location</a> instance that
-is the origin point for the search.
-</p>
-</li>
-</ul>
-<p>
-Returns: The instance of this feature that is closest to the origin point
-(<a href="BaseFeature.html">FindIt::BaseFeature</a>).
-</p>
-					
-
-					
-					<div class="method-source-code"
-						id="closest-source">
+            
+            <div class="method-source-code" id="closest-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 160</span>
-160:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">closest</span>(<span class="ruby-identifier">origin</span>)
-161:       <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;abstract method \&quot;self.closest\&quot; must be overridden&quot;</span>
-162:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+<span class="ruby-comment"># File lib/findit/base-feature.rb, line 145</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">closest</span>(<span class="ruby-identifier">origin</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">NotImplementedError</span>, <span class="ruby-string">&quot;abstract method \&quot;self.closest\&quot; must be overridden&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- closest-source -->
+            
+          </div>
 
-				
+          
 
-				
-			</div>
+          
+        </div><!-- closest-method -->
 
-		
-			<div id="datafile-method" class="method-detail ">
-				<a name="method-c-datafile"></a>
+      
+        <div id="marker-method" class="method-detail ">
+          <a name="method-c-marker"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">datafile</span><span
-						class="method-args">(caller, dir, file)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+          
+          <div class="method-heading">
+            <span class="method-name">marker</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
 
-				<div class="method-description">
-					
-					<p>
-Locate an external datafile for this feature.
-</p>
-<p>
-Parameters:
-</p>
-<ul>
-<li><p>
-caller &#8212; The full pathname of the file containing the calling code,
-i.e. <tt><em>FILE</em></tt>
-</p>
-</li>
-<li><p>
-dir &#8212; The subdirectory for the datafile.
-</p>
-</li>
-<li><p>
-file &#8212; The filename of the datafile.
-</p>
-</li>
-</ul>
-<p>
-Returns: The full pathname (<a href="../String.html">String</a>).
-</p>
-<p>
-For example, given a file:
-</p>
+          <div class="method-description">
+            
+            <p>The map marker graphic for this feature.</p>
+
+<p>Returns: The graphic that should be used to identify this feature on a map
+(<a href="MapMarker.html">FindIt::MapMarker</a>).</p>
+
+<p>The default implementation returns the value of the <em>@marker</em> class
+instance variable. A derived class should either initialize that variable
+or override this method.</p>
+            
+
+            
+            <div class="method-source-code" id="marker-source">
 <pre>
-  $LIBDIR/findit/local/austin.ci.tx.us/feature/fire-station.rb
-</pre>
-<p>
-Making the following call:
-</p>
+<span class="ruby-comment"># File lib/findit/base-feature.rb, line 178</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">marker</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">NameError</span>, <span class="ruby-node">&quot;class instance parameter \&quot;marker\&quot; not initialized for class \&quot;#{self.name}\&quot;&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@marker</span>
+  <span class="ruby-ivar">@marker</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- marker-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- marker-method -->
+
+      
+        <div id="marker_shadow-method" class="method-detail ">
+          <a name="method-c-marker_shadow"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">marker_shadow</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>The map marker shadow graphic for this feature.</p>
+
+<p>Returns: The graphic that should be used as a shadow graphic under the map
+marker for this feature (<a href="MapMarker.html">FindIt::MapMarker</a>).</p>
+
+<p>The default implementation returns the value of the <em>@<a
+href="BaseFeature.html#method-c-marker_shadow">marker_shadow</a></em> class
+instance variable. A derived class should either initialize that variable
+or override this method.</p>
+            
+
+            
+            <div class="method-source-code" id="marker_shadow-source">
 <pre>
-  self.datafile(__FILE__, &quot;fire-stations&quot;, &quot;Austin_Fire_Stations.csv&quot;)
-</pre>
-<p>
-Would produce:
-</p>
-<pre>
-  $LIBDIR/findit/local/austin.ci.tx.us/data/fire-stations/Austin_Fire_Stations.csv</pre>
-					
+<span class="ruby-comment"># File lib/findit/base-feature.rb, line 210</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">marker_shadow</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">NameError</span>, <span class="ruby-node">&quot;class instance parameter \&quot;marker_shadow\&quot; not initialized for class \&quot;#{self.name}\&quot;&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@marker_shadow</span>
+  <span class="ruby-ivar">@marker_shadow</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- marker_shadow-source -->
+            
+          </div>
 
-					
-					<div class="method-source-code"
-						id="datafile-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 41</span>
-41:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">datafile</span>(<span class="ruby-identifier">caller</span>, <span class="ruby-identifier">dir</span>, <span class="ruby-identifier">file</span>)          
-42:       <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-identifier">caller</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;/../data/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">dir</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">file</span>
-43:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+          
 
-				
+          
+        </div><!-- marker_shadow-method -->
 
-				
-			</div>
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
 
-		
-			<div id="marker-method" class="method-detail ">
-				<a name="method-c-marker"></a>
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(location, params = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
 
-				<div class="method-heading">
-				
-					<span class="method-name">marker</span><span
-						class="method-args">()</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+          <div class="method-description">
+            
+            <p>Construct a new feature.</p>
 
-				<div class="method-description">
-					
-					<p>
-The map marker graphic for this feature.
-</p>
-<p>
-<b>This is an abstract method that must be overridden in the derived
-class.</b>
-</p>
-<p>
-Returns: The graphic that should be used to identify this feature on a map
-(<a href="MapMarker.html">FindIt::MapMarker</a>).
-</p>
-					
+<p>Parameters:</p>
+<ul><li>
+<p>location – A <a href="Location.html">FindIt::Location</a> instance with the
+location  of this feature.</p>
+</li><li>
+<p>params – Parameters to initialize feature attributes. See the description
+of the <a href="BaseFeature.html">FindIt::BaseFeature</a> attributes for
+details on parameter values.</p>
+</li></ul>
 
-					
-					<div class="method-source-code"
-						id="marker-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 186</span>
-186:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">marker</span>
-187:       <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;abstract method \&quot;self.marker\&quot; must be overridden&quot;</span>
-188:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+<p>Returns: A <a href="BaseFeature.html">FindIt::BaseFeature</a> instance.</p>
 
-				
+<p>The following parameters are required:</p>
+<ul><li>
+<p>:title =&gt; <a href="../String.html">String</a></p>
+</li><li>
+<p>:address =&gt; <a href="../String.html">String</a></p>
+</li><li>
+<p>:city =&gt; <a href="../String.html">String</a></p>
+</li><li>
+<p>:state =&gt; <a href="../String.html">String</a></p>
+</li></ul>
 
-				
-			</div>
+<p>One of the following parameters must be specified.</p>
+<ul><li>
+<p>:distance =&gt; Numeric</p>
+</li><li>
+<p>:origin =&gt; <a href="Location.html">FindIt::Location</a></p>
+</li></ul>
 
-		
-			<div id="marker-shadow-method" class="method-detail ">
-				<a name="method-c-marker_shadow"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">marker_shadow</span><span
-						class="method-args">()</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p>
-The map marker shadow graphic for this feature.
-</p>
-<p>
-<b>This is an abstract method that must be overridden in the derived
-class.</b>
-</p>
-<p>
-Returns: The graphic that should be used as a shadow graphic under the map
-marker for this feature (<a href="MapMarker.html">FindIt::MapMarker</a>).
-</p>
-					
-
-					
-					<div class="method-source-code"
-						id="marker-shadow-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 214</span>
-214:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">marker_shadow</span>
-215:       <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;abstract method \&quot;self.marker_shadow\&quot; must be overridden&quot;</span>
-216:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-
-				
-			</div>
-
-		
-			<div id="new-method" class="method-detail ">
-				<a name="method-c-new"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">new</span><span
-						class="method-args">(location, params = {})</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p>
-Construct a new feature.
-</p>
-<p>
-Parameters:
-</p>
-<ul>
-<li><p>
-location &#8212; A <a href="Location.html">FindIt::Location</a> instance
-with the location  of this feature.
-</p>
-</li>
-<li><p>
-params &#8212; Parameters to initialize feature attributes. See the
-description of the <a href="BaseFeature.html">FindIt::BaseFeature</a>
-attributes for details on parameter values.
-</p>
-</li>
-</ul>
-<p>
-Returns: A <a href="BaseFeature.html">FindIt::BaseFeature</a> instance.
-</p>
-<p>
-The following parameters are required:
-</p>
-<ul>
-<li><p>
-:title => <a href="../String.html">String</a>
-</p>
-</li>
-<li><p>
-:address => <a href="../String.html">String</a>
-</p>
-</li>
-<li><p>
-:city => <a href="../String.html">String</a>
-</p>
-</li>
-<li><p>
-:state => <a href="../String.html">String</a>
-</p>
-</li>
-</ul>
-<p>
-One of the following parameters must be specified.
-</p>
-<ul>
-<li><p>
-:distance => Numeric
-</p>
-</li>
-<li><p>
-:origin => <a href="Location.html">FindIt::Location</a>
-</p>
-</li>
-</ul>
-<p>
-If both are specified, the <tt>:distance</tt> takes precedence. The
+<p>If both are specified, the <tt>:distance</tt> takes precedence. The
 <tt>:origin</tt> is used only to calculate distance; the coordinate itself
-is not saved.
-</p>
-<p>
-The following parameters are optional.
-</p>
-<ul>
-<li><p>
-:name => <a href="../String.html">String</a>
-</p>
-</li>
-<li><p>
-:zip => <a href="../String.html">String</a>
-</p>
-</li>
-<li><p>
-:link => <a href="../String.html">String</a>
-</p>
-</li>
-<li><p>
-:note => <a href="../String.html">String</a>
-</p>
-</li>
-</ul>
-					
+is not saved.</p>
 
-					
-					<div class="method-source-code"
-						id="new-source">
+<p>The following parameters are optional.</p>
+<ul><li>
+<p>:name =&gt; <a href="../String.html">String</a></p>
+</li><li>
+<p>:zip =&gt; <a href="../String.html">String</a></p>
+</li><li>
+<p>:link =&gt; <a href="../String.html">String</a></p>
+</li><li>
+<p>:note =&gt; <a href="../String.html">String</a></p>
+</li></ul>
+            
+
+            
+            <div class="method-source-code" id="new-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 124</span>
-124:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">location</span>, <span class="ruby-identifier">params</span> = {})
-125:       [<span class="ruby-value">:title</span>, <span class="ruby-value">:address</span>, <span class="ruby-value">:city</span>, <span class="ruby-value">:state</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
-126:         <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;required parameter \&quot;:#{p}\&quot; not specified&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">p</span>)
-127:       <span class="ruby-keyword kw">end</span>
-128:       <span class="ruby-ivar">@location</span> = <span class="ruby-identifier">location</span>
-129:       <span class="ruby-ivar">@title</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:title</span>]
-130:       <span class="ruby-ivar">@name</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:name</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:name</span>)
-131:       <span class="ruby-ivar">@address</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:address</span>]
-132:       <span class="ruby-ivar">@city</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:city</span>]
-133:       <span class="ruby-ivar">@state</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:state</span>]
-134:       <span class="ruby-ivar">@zip</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:zip</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:zip</span>)
-135:       <span class="ruby-ivar">@link</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:link</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:link</span>)
-136:       <span class="ruby-ivar">@note</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:note</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:note</span>)
-137:       <span class="ruby-ivar">@distance</span> = <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:distance</span>)
-138:         <span class="ruby-identifier">params</span>[<span class="ruby-value">:distance</span>]
-139:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:origin</span>)
-140:         <span class="ruby-identifier">location</span>.<span class="ruby-identifier">distance</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:origin</span>])
-141:       <span class="ruby-keyword kw">else</span>
-142:         <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;must specify either \&quot;:distance\&quot; or \&quot;:origin\&quot; parameter&quot;</span>
-143:       <span class="ruby-keyword kw">end</span>
-144:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+<span class="ruby-comment"># File lib/findit/base-feature.rb, line 109</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">location</span>, <span class="ruby-identifier">params</span> = {})
+  [<span class="ruby-value">:title</span>, <span class="ruby-value">:address</span>, <span class="ruby-value">:city</span>, <span class="ruby-value">:state</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;required parameter \&quot;:#{p}\&quot; not specified&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">p</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@location</span> = <span class="ruby-identifier">location</span>
+  <span class="ruby-ivar">@title</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:title</span>]
+  <span class="ruby-ivar">@name</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:name</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:name</span>)
+  <span class="ruby-ivar">@address</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:address</span>]
+  <span class="ruby-ivar">@city</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:city</span>]
+  <span class="ruby-ivar">@state</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:state</span>]
+  <span class="ruby-ivar">@zip</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:zip</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:zip</span>)
+  <span class="ruby-ivar">@link</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:link</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:link</span>)
+  <span class="ruby-ivar">@note</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:note</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:note</span>)
+  <span class="ruby-ivar">@distance</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:distance</span>)
+    <span class="ruby-identifier">params</span>[<span class="ruby-value">:distance</span>]
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:origin</span>)
+    <span class="ruby-identifier">location</span>.<span class="ruby-identifier">distance</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:origin</span>])
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;must specify either \&quot;:distance\&quot; or \&quot;:origin\&quot; parameter&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
 
-				
+          
 
-				
-			</div>
+          
+        </div><!-- new-method -->
 
-		
-			<div id="type-method" class="method-detail ">
-				<a name="method-c-type"></a>
+      
+        <div id="type-method" class="method-detail ">
+          <a name="method-c-type"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">type</span><span
-						class="method-args">()</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+          
+          <div class="method-heading">
+            <span class="method-name">type</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
 
-				<div class="method-description">
-					
-					<p>
-The feature type.
-</p>
-<p>
-<b>This is an abstract method that must be overridden in the derived
-class.</b>
-</p>
-<p>
-Returns: A symbol that indicates the feature type, such as
-<tt>:FIRE_STATION</tt> or <tt>:LIBRARY</tt>.
-</p>
-					
+          <div class="method-description">
+            
+            <p>The feature type.</p>
 
-					
-					<div class="method-source-code"
-						id="type-source">
+<p>Returns: A symbol that indicates the feature type, such as
+<tt>:FIRE_STATION</tt> or <tt>:LIBRARY</tt>.</p>
+
+<p>The default implementation returns the value of the <em>@type</em> class
+instance variable. A derived class should either initialize that variable
+or override this method.</p>
+            
+
+            
+            <div class="method-source-code" id="type-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 173</span>
-173:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">type</span>
-174:       <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;abstract method \&quot;self.type\&quot; must be overridden&quot;</span>
-175:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+<span class="ruby-comment"># File lib/findit/base-feature.rb, line 161</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">type</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">NameError</span>, <span class="ruby-node">&quot;class instance parameter \&quot;type\&quot; not initialized for class \&quot;#{self.name}\&quot;&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@type</span>
+  <span class="ruby-ivar">@type</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- type-source -->
+            
+          </div>
 
-				
+          
 
-				
-			</div>
+          
+        </div><!-- type-method -->
 
-		
-		</div>
-	
-		<div id="public-instance-method-details" class="method-section section">
-			<h3 class="section-header">Public Instance Methods</h3>
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
 
-		
-			<div id="hint-method" class="method-detail ">
-				<a name="method-i-hint"></a>
+      
+        <div id="hint-method" class="method-detail ">
+          <a name="method-i-hint"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">hint</span><span
-						class="method-args">()</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+          
+          <div class="method-heading">
+            <span class="method-name">hint</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
 
-				<div class="method-description">
-					
-					<p>
-A brief &#8220;hover&#8221; hint string to display for this feature.
-</p>
-<p>
-Returns: A plain text string, with HTML characters escaped.
-</p>
-					
+          <div class="method-description">
+            
+            <p>A brief “hover” hint string to display for this feature.</p>
 
-					
-					<div class="method-source-code"
-						id="hint-source">
+<p>Returns: A plain text string, with HTML characters escaped.</p>
+            
+
+            
+            <div class="method-source-code" id="hint-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 238</span>
-238:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hint</span>
-239:       <span class="ruby-identifier">s</span> = <span class="ruby-ivar">@title</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;: &quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-ivar">@name</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@address</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@name</span>)
-240:       <span class="ruby-identifier">s</span>.<span class="ruby-identifier">html_safe</span>
-241:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+<span class="ruby-comment"># File lib/findit/base-feature.rb, line 235</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">hint</span>
+  <span class="ruby-identifier">s</span> = <span class="ruby-ivar">@title</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;: &quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-ivar">@name</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@address</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@name</span>)
+  <span class="ruby-identifier">s</span>.<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- hint-source -->
+            
+          </div>
 
-				
+          
 
-				
-			</div>
+          
+        </div><!-- hint-method -->
 
-		
-			<div id="info-method" class="method-detail ">
-				<a name="method-i-info"></a>
+      
+        <div id="info-method" class="method-detail ">
+          <a name="method-i-info"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">info</span><span
-						class="method-args">()</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+          
+          <div class="method-heading">
+            <span class="method-name">info</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
 
-				<div class="method-description">
-					
-					<p>
-Detail information on this feature, suitable for display in a pop-up
-window.
-</p>
-<p>
-Returns: An HTML string.
-</p>
-					
+          <div class="method-description">
+            
+            <p>Detail information on this feature, suitable for display in a pop-up
+window.</p>
 
-					
-					<div class="method-source-code"
-						id="info-source">
+<p>Returns: An HTML string.</p>
+            
+
+            
+            <div class="method-source-code" id="info-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 250</span>
-250:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">info</span>
-251:       <span class="ruby-identifier">result</span> = []    
-252:       <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;&lt;b&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@title</span>.<span class="ruby-identifier">capitalize_words</span>.<span class="ruby-identifier">html_safe</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/b&gt;&quot;</span>
-253:       <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@name</span>.<span class="ruby-identifier">html_safe</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@name</span>.<span class="ruby-identifier">empty?</span>
-254:       <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@address</span>.<span class="ruby-identifier">html_safe</span>
-255:       
-256:       <span class="ruby-identifier">s</span> = <span class="ruby-ivar">@city</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@state</span>
-257:       <span class="ruby-identifier">s</span> <span class="ruby-operator">+=</span> <span class="ruby-value str">&quot; &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@zip</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@zip</span>.<span class="ruby-identifier">empty?</span>
-258:       <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">html_safe</span>
-259:       
-260:       <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@note</span>.<span class="ruby-identifier">html_safe</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@note</span>.<span class="ruby-identifier">empty?</span>
-261:       
-262:       <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;%.1f mi away&quot;</span> <span class="ruby-operator">%</span> [<span class="ruby-ivar">@distance</span>]
-263:         
-264:       <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@link</span>.<span class="ruby-identifier">empty?</span>
-265:         <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;&lt;a href=\&quot;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@link</span>.<span class="ruby-identifier">html_safe</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;\&quot;&gt;more info ...&lt;/a&gt;&quot;</span>
-266:       <span class="ruby-keyword kw">end</span>
-267:       
-268:       <span class="ruby-value str">&quot;&lt;div class=\&quot;findit-feature-info\&quot;&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">result</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">&quot;&lt;br /&gt;\n&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;\n&lt;/div&gt;&quot;</span>
-269:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+<span class="ruby-comment"># File lib/findit/base-feature.rb, line 247</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">info</span>
+  <span class="ruby-identifier">result</span> = []    
+  <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;&lt;b&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@title</span>.<span class="ruby-identifier">capitalize_words</span>.<span class="ruby-identifier">html_safe</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;&lt;/b&gt;&quot;</span>
+  <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@name</span>.<span class="ruby-identifier">html_safe</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@name</span>.<span class="ruby-identifier">empty?</span>
+  <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@address</span>.<span class="ruby-identifier">html_safe</span>
+  
+  <span class="ruby-identifier">s</span> = <span class="ruby-ivar">@city</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@state</span>
+  <span class="ruby-identifier">s</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot; &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@zip</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@zip</span>.<span class="ruby-identifier">empty?</span>
+  <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">html_safe</span>
+  
+  <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@note</span>.<span class="ruby-identifier">html_safe</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@note</span>.<span class="ruby-identifier">empty?</span>
+  
+  <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;%.1f mi away&quot;</span> <span class="ruby-operator">%</span> [<span class="ruby-ivar">@distance</span>]
+    
+  <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@link</span>.<span class="ruby-identifier">empty?</span>
+    <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;&lt;a href=\&quot;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@link</span>.<span class="ruby-identifier">html_safe</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\&quot;&gt;more info ...&lt;/a&gt;&quot;</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-string">&quot;&lt;div class=\&quot;findit-feature-info\&quot;&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">result</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot;&lt;br /&gt;\n&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&lt;/div&gt;&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- info-source -->
+            
+          </div>
 
-				
+          
 
-				
-			</div>
+          
+        </div><!-- info-method -->
 
-		
-			<div id="marker-method" class="method-detail ">
-				<a name="method-i-marker"></a>
+      
+        <div id="marker-method" class="method-detail ">
+          <a name="method-i-marker"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">marker</span><span
-						class="method-args">()</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+          
+          <div class="method-heading">
+            <span class="method-name">marker</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
 
-				<div class="method-description">
-					
-					<p>
-The map marker for this feature.
-</p>
-<p>
-Returns: The value from the class marker method.
-</p>
-<p>
-Typically all features of a given type will use the same marker, which is
+          <div class="method-description">
+            
+            <p>The map marker for this feature.</p>
+
+<p>Returns: The value from the class method <em>self.marker</em>.</p>
+
+<p>Typically all features of a given type will use the same marker, which is
 what this default implementation provides. If you wish to customize the
 marker within a feature class, the implementing class can override this
-method.
-</p>
-					
+method.</p>
+            
 
-					
-					<div class="method-source-code"
-						id="marker-source">
+            
+            <div class="method-source-code" id="marker-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 201</span>
-201:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">marker</span>
-202:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">marker</span>
-203:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+<span class="ruby-comment"># File lib/findit/base-feature.rb, line 194</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">marker</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">marker</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- marker-source -->
+            
+          </div>
 
-				
+          
 
-				
-			</div>
+          
+        </div><!-- marker-method -->
 
-		
-			<div id="marker-shadow-method" class="method-detail ">
-				<a name="method-i-marker_shadow"></a>
+      
+        <div id="marker_shadow-method" class="method-detail ">
+          <a name="method-i-marker_shadow"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">marker_shadow</span><span
-						class="method-args">()</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+          
+          <div class="method-heading">
+            <span class="method-name">marker_shadow</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
 
-				<div class="method-description">
-					
-					<p>
-The map marker shadow for this feature.
-</p>
-<p>
-Returns: The value from the class <a
-href="BaseFeature.html#method-c-marker_shadow">marker_shadow</a> method.
-</p>
-<p>
-Typically all features of a given type will use the same marker, which is
+          <div class="method-description">
+            
+            <p>The map marker shadow for this feature.</p>
+
+<p>Returns: The value from the class method <em>self.marker_shadow</em>.</p>
+
+<p>Typically all features of a given type will use the same marker, which is
 what this default implementation provides. If you wish to customize the
 marker within a feature class, the implementing class can override this
-method.
-</p>
-					
+method.</p>
+            
 
-					
-					<div class="method-source-code"
-						id="marker-shadow-source">
+            
+            <div class="method-source-code" id="marker_shadow-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 228</span>
-228:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">marker_shadow</span>
-229:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">marker_shadow</span>
-230:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+<span class="ruby-comment"># File lib/findit/base-feature.rb, line 225</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">marker_shadow</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">marker_shadow</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- marker_shadow-source -->
+            
+          </div>
 
-				
+          
 
-				
-			</div>
+          
+        </div><!-- marker_shadow-method -->
 
-		
-			<div id="to-h-method" class="method-detail ">
-				<a name="method-i-to_h"></a>
+      
+        <div id="to_h-method" class="method-detail ">
+          <a name="method-i-to_h"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">to_h</span><span
-						class="method-args">()</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+          
+          <div class="method-heading">
+            <span class="method-name">to_h</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
 
-				<div class="method-description">
-					
-					<p>
-Produce a Hash that represents the feature values.
-</p>
-					
+          <div class="method-description">
+            
+            <p>Produce a Hash that represents the feature values.</p>
+            
 
-					
-					<div class="method-source-code"
-						id="to-h-source">
+            
+            <div class="method-source-code" id="to_h-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/findit/base-feature.rb, line 273</span>
-273:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_h</span>
-274:       {    
-275:         <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">type</span>,
-276:         <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@title</span>,
-277:         <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@name</span>,
-278:         <span class="ruby-value">:address</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@address</span>,
-279:         <span class="ruby-value">:city</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@city</span>,
-280:         <span class="ruby-value">:state</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@state</span>,
-281:         <span class="ruby-value">:zip</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@zip</span>,
-282:         <span class="ruby-value">:link</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@link</span>,
-283:         <span class="ruby-value">:note</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@note</span>,
-284:         <span class="ruby-value">:latitude</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@location</span>.<span class="ruby-identifier">lat</span>,
-285:         <span class="ruby-value">:longitude</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@location</span>.<span class="ruby-identifier">lng</span>,
-286:         <span class="ruby-value">:distance</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@distance</span>,
-287:         <span class="ruby-value">:hint</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">hint</span>,
-288:         <span class="ruby-value">:info</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">info</span>,
-289:         <span class="ruby-value">:marker</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">marker</span>.<span class="ruby-identifier">to_h</span>,
-290:         <span class="ruby-value">:marker_shadow</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">marker_shadow</span>.<span class="ruby-identifier">to_h</span>,
-291:       }
-292:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+<span class="ruby-comment"># File lib/findit/base-feature.rb, line 270</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_h</span>
+  {    
+    <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">type</span>,
+    <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@title</span>,
+    <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@name</span>,
+    <span class="ruby-value">:address</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@address</span>,
+    <span class="ruby-value">:city</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@city</span>,
+    <span class="ruby-value">:state</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@state</span>,
+    <span class="ruby-value">:zip</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@zip</span>,
+    <span class="ruby-value">:link</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@link</span>,
+    <span class="ruby-value">:note</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@note</span>,
+    <span class="ruby-value">:latitude</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@location</span>.<span class="ruby-identifier">lat</span>,
+    <span class="ruby-value">:longitude</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@location</span>.<span class="ruby-identifier">lng</span>,
+    <span class="ruby-value">:distance</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@distance</span>,
+    <span class="ruby-value">:hint</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">hint</span>,
+    <span class="ruby-value">:info</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">info</span>,
+    <span class="ruby-value">:marker</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">marker</span>.<span class="ruby-identifier">to_h</span>,
+    <span class="ruby-value">:marker_shadow</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">marker_shadow</span>.<span class="ruby-identifier">to_h</span>,
+  }
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_h-source -->
+            
+          </div>
 
-				
+          
 
-				
-			</div>
+          
+        </div><!-- to_h-method -->
 
-		
-		</div>
-	
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
 
-	</div>
+  </div><!-- documentation -->
 
-
-	<div id="rdoc-debugging-section-dump" class="debugging-section">
-	
-		<p>Disabled; run with --debug to generate this.</p>
-	
-	</div>
-
-	<div id="validator-badges">
-		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-			Rdoc Generator</a> 1.1.6</small>.</p>
-	</div>
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
 
 </body>
 </html>

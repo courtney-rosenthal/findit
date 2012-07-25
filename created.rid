@@ -1,17 +1,17 @@
-Thu, 12 Jul 2012 16:19:37 -0500
-TODO.rdoc	Thu, 12 Jul 2012 16:10:44 -0500
-LICENSE.rdoc	Thu, 12 Jul 2012 16:10:44 -0500
-INSTALL.rdoc	Thu, 12 Jul 2012 16:10:44 -0500
-README.rdoc	Thu, 12 Jul 2012 16:10:44 -0500
-bin/findit-svc	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit.rb	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit/location.rb	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit/base-feature.rb	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit/local/travis.co.tx.us/feature/voting-place.rb	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit/local/austin.ci.tx.us/feature/base-facility.rb	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit/local/austin.ci.tx.us/feature/moon-tower.rb	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit/local/austin.ci.tx.us/feature/post-office.rb	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit/local/austin.ci.tx.us/feature/library.rb	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit/local/austin.ci.tx.us/feature/fire-station.rb	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit/app.rb	Thu, 12 Jul 2012 16:10:44 -0500
-lib/findit/map-marker.rb	Thu, 12 Jul 2012 16:10:44 -0500
+Wed, 25 Jul 2012 15:51:59 -0500
+TODO.rdoc	Mon, 23 Jul 2012 12:01:47 -0500
+INSTALL.rdoc	Mon, 23 Jul 2012 12:01:47 -0500
+README.rdoc	Mon, 23 Jul 2012 12:01:47 -0500
+LICENSE.rdoc	Mon, 23 Jul 2012 12:01:47 -0500
+lib/findit/base-feature.rb	Wed, 25 Jul 2012 15:51:51 -0500
+lib/findit/map-marker.rb	Mon, 23 Jul 2012 12:01:47 -0500
+lib/findit/app.rb	Wed, 25 Jul 2012 15:51:51 -0500
+lib/findit/feature/austin.ci.tx.us/fire-station.rb	Wed, 25 Jul 2012 15:51:51 -0500
+lib/findit/feature/austin.ci.tx.us/police-station.rb	Wed, 25 Jul 2012 15:51:51 -0500
+lib/findit/feature/austin.ci.tx.us/historical.rb	Wed, 25 Jul 2012 15:51:51 -0500
+lib/findit/feature/austin.ci.tx.us/facility.rb	Wed, 25 Jul 2012 15:51:51 -0500
+lib/findit/feature/travis.co.tx.us/voting-place.rb	Wed, 25 Jul 2012 15:51:51 -0500
+lib/findit/feature/rake-defs.rb	Wed, 25 Jul 2012 15:51:51 -0500
+lib/findit/feature/flat-data-set.rb	Wed, 25 Jul 2012 15:51:51 -0500
+lib/findit/location.rb	Mon, 23 Jul 2012 12:01:47 -0500
+lib/findit.rb	Mon, 23 Jul 2012 12:01:47 -0500

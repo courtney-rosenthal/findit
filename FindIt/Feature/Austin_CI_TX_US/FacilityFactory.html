@@ -5,7 +5,7 @@
 <head>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 
-  <title>Class: FindIt::Feature::Austin_CI_TX_US::FireStation</title>
+  <title>Class: FindIt::Feature::Austin_CI_TX_US::FacilityFactory</title>
 
   <link rel="stylesheet" href="../../../rdoc.css" type="text/css" media="screen" />
 
@@ -34,8 +34,8 @@
         <div class="section-body">
           <ul>
           
-            <li><a href="../../../lib/findit/feature/austin_ci_tx_us/fire-station_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/findit/feature/austin.ci.tx.us/fire-station.rb">lib/findit/feature/austin.ci.tx.us/fire-station.rb</a></li>
+            <li><a href="../../../lib/findit/feature/austin_ci_tx_us/facility_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/findit/feature/austin.ci.tx.us/facility.rb">lib/findit/feature/austin.ci.tx.us/facility.rb</a></li>
           
           </ul>
         </div>
@@ -50,7 +50,7 @@
       <div id="parent-class-section" class="section">
         <h3 class="section-header">Parent</h3>
         
-        <p class="link"><a href="../../BaseFeature.html">FindIt::BaseFeature</a></p>
+        <p class="link">Object</p>
         
       </div>
       
@@ -65,7 +65,7 @@
         <h3 class="section-header">Methods</h3>
         <ul class="link-list">
           
-          <li><a href="#method-c-closest">::closest</a></li>
+          <li><a href="#method-c-create">::create</a></li>
           
         </ul>
       </div>
@@ -157,13 +157,10 @@
   </div>
 
   <div id="documentation">
-    <h1 class="class">FindIt::Feature::Austin_CI_TX_US::FireStation</h1>
+    <h1 class="class">FindIt::Feature::Austin_CI_TX_US::FacilityFactory</h1>
 
     <div id="description" class="description">
       
-<p>Implementation of <a href="../../BaseFeature.html">FindIt::BaseFeature</a>
-to represent fire stations in Austin, TX.</p>
-
     </div><!-- description -->
 
     
@@ -184,13 +181,13 @@ to represent fire stations in Austin, TX.</p>
         <h3 class="section-header">Public Class Methods</h3>
 
       
-        <div id="closest-method" class="method-detail ">
-          <a name="method-c-closest"></a>
+        <div id="create-method" class="method-detail ">
+          <a name="method-c-create"></a>
 
           
           <div class="method-heading">
-            <span class="method-name">closest</span><span
-              class="method-args">(origin)</span>
+            <span class="method-name">create</span><span
+              class="method-args">(db, type, options = {})</span>
             <span class="method-click-advice">click to toggle source</span>
           </div>
           
@@ -201,33 +198,50 @@ to represent fire stations in Austin, TX.</p>
             
 
             
-            <div class="method-source-code" id="closest-source">
+            <div class="method-source-code" id="create-source">
 <pre>
-<span class="ruby-comment"># File lib/findit/feature/austin.ci.tx.us/fire-station.rb, line 49</span>
-<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">closest</span>(<span class="ruby-identifier">origin</span>)
+<span class="ruby-comment"># File lib/findit/feature/austin.ci.tx.us/facility.rb, line 9</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">db</span>, <span class="ruby-identifier">type</span>, <span class="ruby-identifier">options</span> = {})
+  <span class="ruby-identifier">klass</span> = <span class="ruby-constant">Class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">AbstractFacility</span>)
+  <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-value">:@db</span>, <span class="ruby-identifier">db</span>)
+  <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-value">:@type</span>, <span class="ruby-identifier">type</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">type</span>
+    
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:POST_OFFICE</span>
+    <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-value">:@marker</span>, <span class="ruby-constant">FindIt</span><span class="ruby-operator">::</span><span class="ruby-constant">MapMarker</span>.<span class="ruby-identifier">new</span>(
+      <span class="ruby-string">&quot;http://maps.google.com/mapfiles/ms/micons/postoffice-us.png&quot;</span>,
+      <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">32</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">32</span>))
+    <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-value">:@marker_shadow</span>, <span class="ruby-constant">FindIt</span><span class="ruby-operator">::</span><span class="ruby-constant">MapMarker</span>.<span class="ruby-identifier">new</span>(
+      <span class="ruby-string">&quot;http://maps.google.com/mapfiles/ms/micons/postoffice-us.shadow.png&quot;</span>,
+      <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">32</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">59</span>))
+    <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-value">:@facility_title</span>, <span class="ruby-string">&quot;Closest post office&quot;</span>)
+    <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-value">:@facility_type</span>, <span class="ruby-string">&quot;POST OFFICE&quot;</span>)
+    
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:LIBRARY</span>
+    <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-value">:@marker</span>, <span class="ruby-constant">FindIt</span><span class="ruby-operator">::</span><span class="ruby-constant">MapMarker</span>.<span class="ruby-identifier">new</span>(
+      <span class="ruby-string">&quot;http://maps.google.com/mapfiles/kml/pal3/icon56.png&quot;</span>,
+      <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">32</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">32</span>))
+    <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-value">:@marker_shadow</span>, <span class="ruby-constant">FindIt</span><span class="ruby-operator">::</span><span class="ruby-constant">MapMarker</span>.<span class="ruby-identifier">new</span>(
+      <span class="ruby-string">&quot;http://maps.google.com/mapfiles/kml/pal3/icon56s.png&quot;</span>,
+      <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">32</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">59</span>))
+    <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-value">:@facility_title</span>, <span class="ruby-string">&quot;Closest library&quot;</span>)
+    <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-value">:@facility_type</span>, <span class="ruby-string">&quot;LIBRARY&quot;</span>)
+    
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;unknown facility type \&quot;#{type}\&quot;&quot;</span>
+    
+  <span class="ruby-keyword">end</span>
   
-  <span class="ruby-identifier">feature</span> = <span class="ruby-ivar">@fire_stations</span>.<span class="ruby-identifier">closest</span>(<span class="ruby-identifier">origin</span>)
-  
-  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">feature</span>         
-
-  <span class="ruby-identifier">new</span>(<span class="ruby-identifier">feature</span>[<span class="ruby-value">:location</span>],
-    <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Closest fire station&quot;</span>,
-    <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:name</span>],
-    <span class="ruby-value">:address</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:street</span>],
-    <span class="ruby-value">:city</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:city</span>],
-    <span class="ruby-value">:state</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:state</span>],
-    <span class="ruby-value">:zip</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:zip</span>],
-    <span class="ruby-value">:distance</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:distance</span>]
-  )
+  <span class="ruby-identifier">klass</span>          
 <span class="ruby-keyword">end</span></pre>
-            </div><!-- closest-source -->
+            </div><!-- create-source -->
             
           </div>
 
           
 
           
-        </div><!-- closest-method -->
+        </div><!-- create-method -->
 
       
       </div><!-- public-class-method-details -->

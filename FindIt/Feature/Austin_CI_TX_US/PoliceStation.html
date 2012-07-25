@@ -5,7 +5,7 @@
 <head>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 
-  <title>Class: FindIt::Feature::Austin_CI_TX_US::FireStation</title>
+  <title>Class: FindIt::Feature::Austin_CI_TX_US::PoliceStation</title>
 
   <link rel="stylesheet" href="../../../rdoc.css" type="text/css" media="screen" />
 
@@ -34,8 +34,8 @@
         <div class="section-body">
           <ul>
           
-            <li><a href="../../../lib/findit/feature/austin_ci_tx_us/fire-station_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/findit/feature/austin.ci.tx.us/fire-station.rb">lib/findit/feature/austin.ci.tx.us/fire-station.rb</a></li>
+            <li><a href="../../../lib/findit/feature/austin_ci_tx_us/police-station_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/findit/feature/austin.ci.tx.us/police-station.rb">lib/findit/feature/austin.ci.tx.us/police-station.rb</a></li>
           
           </ul>
         </div>
@@ -157,12 +157,12 @@
   </div>
 
   <div id="documentation">
-    <h1 class="class">FindIt::Feature::Austin_CI_TX_US::FireStation</h1>
+    <h1 class="class">FindIt::Feature::Austin_CI_TX_US::PoliceStation</h1>
 
     <div id="description" class="description">
       
 <p>Implementation of <a href="../../BaseFeature.html">FindIt::BaseFeature</a>
-to represent fire stations in Austin, TX.</p>
+to represent Police stations in Austin, TX.</p>
 
     </div><!-- description -->
 
@@ -203,18 +203,18 @@ to represent fire stations in Austin, TX.</p>
             
             <div class="method-source-code" id="closest-source">
 <pre>
-<span class="ruby-comment"># File lib/findit/feature/austin.ci.tx.us/fire-station.rb, line 49</span>
+<span class="ruby-comment"># File lib/findit/feature/austin.ci.tx.us/police-station.rb, line 47</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">closest</span>(<span class="ruby-identifier">origin</span>)
-  
-  <span class="ruby-identifier">feature</span> = <span class="ruby-ivar">@fire_stations</span>.<span class="ruby-identifier">closest</span>(<span class="ruby-identifier">origin</span>)
+
+  <span class="ruby-identifier">feature</span> = <span class="ruby-ivar">@police_stations</span>.<span class="ruby-identifier">closest</span>(<span class="ruby-identifier">origin</span>)
   
   <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">feature</span>         
 
   <span class="ruby-identifier">new</span>(<span class="ruby-identifier">feature</span>[<span class="ruby-value">:location</span>],
-    <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Closest fire station&quot;</span>,
+    <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Closest police station&quot;</span>,
     <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:name</span>],
     <span class="ruby-value">:address</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:street</span>],
-    <span class="ruby-value">:city</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:city</span>],
+    <span class="ruby-value">:city</span> =<span class="ruby-operator">&gt;</span>  <span class="ruby-identifier">feature</span>[<span class="ruby-value">:city</span>],
     <span class="ruby-value">:state</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:state</span>],
     <span class="ruby-value">:zip</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:zip</span>],
     <span class="ruby-value">:distance</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature</span>[<span class="ruby-value">:distance</span>]
