@@ -1,210 +1,212 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+
+<html>
 <head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
-  <title>Class: FindIt::Feature::FlatDataSet</title>
+<title>class FindIt::Feature::FlatDataSet - FindIt</title>
 
-  <link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
 
-  <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
 
-</head>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
 <body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
 
-  <div id="metadata">
-    <div id="home-metadata">
-      <div id="home-section" class="section">
-        <h3 class="section-header">
-          <a href="../../index.html">Home</a>
-          <a href="../../index.html#classes">Classes</a>
-          <a href="../../index.html#methods">Methods</a>
-        </h3>
-      </div>
-    </div>
 
-    <div id="file-metadata">
-      <div id="file-list-section" class="section">
-        <h3 class="section-header">In Files</h3>
-        <div class="section-body">
-          <ul>
-          
-            <li><a href="../../lib/findit/feature/flat-data-set_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/findit/feature/flat-data-set.rb">lib/findit/feature/flat-data-set.rb</a></li>
-          
-          </ul>
-        </div>
-      </div>
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
 
-      
-    </div>
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
 
-    <div id="class-metadata">
-      
-      <!-- Parent Class -->
-      <div id="parent-class-section" class="section">
-        <h3 class="section-header">Parent</h3>
-        
-        <p class="link">Object</p>
-        
-      </div>
-      
 
-      
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/findit/feature/flat-data-set.rb
+  </ul>
+</nav>
 
-      
-
-      
-      <!-- Method Quickref -->
-      <div id="method-list-section" class="section">
-        <h3 class="section-header">Methods</h3>
-        <ul class="link-list">
-          
-          <li><a href="#method-c-load">::load</a></li>
-          
-          <li><a href="#method-c-new">::new</a></li>
-          
-          <li><a href="#method-c-path">::path</a></li>
-          
-          <li><a href="#method-i-5B-5D">#[]</a></li>
-          
-          <li><a href="#method-i-closest">#closest</a></li>
-          
-        </ul>
-      </div>
-      
-
-      
-    </div>
-
-    <div id="project-metadata">
-      
-      
-      <div id="fileindex-section" class="section project-section">
-        <h3 class="section-header">Files</h3>
-        <ul>
-        
-          <li class="file"><a href="../../INSTALL_rdoc.html">INSTALL.rdoc</a></li>
-        
-          <li class="file"><a href="../../LICENSE_rdoc.html">LICENSE.rdoc</a></li>
-        
-          <li class="file"><a href="../../README_rdoc.html">README.rdoc</a></li>
-        
-          <li class="file"><a href="../../TODO_rdoc.html">TODO.rdoc</a></li>
-        
-        </ul>
-      </div>
-      
-
-      <div id="classindex-section" class="section project-section">
-        <h3 class="section-header">Class/Module Index
-          <span class="search-toggle"><img src="../../images/find.png"
-            height="16" width="16" alt="[+]"
-            title="show/hide quicksearch" /></span></h3>
-        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-        <fieldset>
-          <legend>Quicksearch</legend>
-          <input type="text" name="quicksearch" value=""
-            class="quicksearch-field" />
-        </fieldset>
-        </form>
-
-        <ul class="link-list">
-        
-          <li><a href="../../FindIt.html">FindIt</a></li>
-        
-          <li><a href="../../FindIt/App.html">FindIt::App</a></li>
-        
-          <li><a href="../../FindIt/BaseFeature.html">FindIt::BaseFeature</a></li>
-        
-          <li><a href="../../FindIt/Feature.html">FindIt::Feature</a></li>
-        
-          <li><a href="../../FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a></li>
-        
-          <li><a href="../../FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html">FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a></li>
-        
-          <li><a href="../../FindIt/Feature/Austin_CI_TX_US/AbstractHistorical.html">FindIt::Feature::Austin_CI_TX_US::AbstractHistorical</a></li>
-        
-          <li><a href="../../FindIt/Feature/Austin_CI_TX_US/FacilityFactory.html">FindIt::Feature::Austin_CI_TX_US::FacilityFactory</a></li>
-        
-          <li><a href="../../FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
-        
-          <li><a href="../../FindIt/Feature/Austin_CI_TX_US/HistoricalFactory.html">FindIt::Feature::Austin_CI_TX_US::HistoricalFactory</a></li>
-        
-          <li><a href="../../FindIt/Feature/Austin_CI_TX_US/PoliceStation.html">FindIt::Feature::Austin_CI_TX_US::PoliceStation</a></li>
-        
-          <li><a href="../../FindIt/Feature/FlatDataSet.html">FindIt::Feature::FlatDataSet</a></li>
-        
-          <li><a href="../../FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a></li>
-        
-          <li><a href="../../FindIt/Feature/Travis_CO_TX_US/AbstractVotingPlace.html">FindIt::Feature::Travis_CO_TX_US::AbstractVotingPlace</a></li>
-        
-          <li><a href="../../FindIt/Feature/Travis_CO_TX_US/VotingPlaceFactory.html">FindIt::Feature::Travis_CO_TX_US::VotingPlaceFactory</a></li>
-        
-          <li><a href="../../FindIt/Location.html">FindIt::Location</a></li>
-        
-          <li><a href="../../FindIt/MapMarker.html">FindIt::MapMarker</a></li>
-        
-          <li><a href="../../FindIt/RakeDefs.html">FindIt::RakeDefs</a></li>
-        
-          <li><a href="../../NilClass.html">NilClass</a></li>
-        
-          <li><a href="../../String.html">String</a></li>
-        
-        </ul>
-        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
-      </div>
-
-      
-    </div>
+    
   </div>
 
-  <div id="documentation">
-    <h1 class="class">FindIt::Feature::FlatDataSet</h1>
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
 
-    <div id="description" class="description">
-      
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-load">::load</a>
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-c-path">::path</a>
+    
+    <li><a href="#method-i-5B-5D">#[]</a>
+    
+    <li><a href="#method-i-closest">#closest</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../INSTALL_rdoc.html">INSTALL</a>
+  
+    <li class="file"><a href="../../LICENSE_rdoc.html">LICENSE</a>
+  
+    <li class="file"><a href="../../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../../TODO_rdoc.html">TODO</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../FindIt.html">FindIt</a>
+  
+    <li><a href="../../FindIt/App.html">FindIt::App</a>
+  
+    <li><a href="../../FindIt/BaseFeature.html">FindIt::BaseFeature</a>
+  
+    <li><a href="../../FindIt/Feature.html">FindIt::Feature</a>
+  
+    <li><a href="../../FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a>
+  
+    <li><a href="../../FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html">FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a>
+  
+    <li><a href="../../FindIt/Feature/Austin_CI_TX_US/AbstractHistorical.html">FindIt::Feature::Austin_CI_TX_US::AbstractHistorical</a>
+  
+    <li><a href="../../FindIt/Feature/Austin_CI_TX_US/FacilityFactory.html">FindIt::Feature::Austin_CI_TX_US::FacilityFactory</a>
+  
+    <li><a href="../../FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a>
+  
+    <li><a href="../../FindIt/Feature/Austin_CI_TX_US/HistoricalFactory.html">FindIt::Feature::Austin_CI_TX_US::HistoricalFactory</a>
+  
+    <li><a href="../../FindIt/Feature/Austin_CI_TX_US/PoliceStation.html">FindIt::Feature::Austin_CI_TX_US::PoliceStation</a>
+  
+    <li><a href="../../FindIt/Feature/FlatDataSet.html">FindIt::Feature::FlatDataSet</a>
+  
+    <li><a href="../../FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a>
+  
+    <li><a href="../../FindIt/Feature/Travis_CO_TX_US/AbstractVotingPlace.html">FindIt::Feature::Travis_CO_TX_US::AbstractVotingPlace</a>
+  
+    <li><a href="../../FindIt/Feature/Travis_CO_TX_US/VotingPlaceFactory.html">FindIt::Feature::Travis_CO_TX_US::VotingPlaceFactory</a>
+  
+    <li><a href="../../FindIt/Location.html">FindIt::Location</a>
+  
+    <li><a href="../../FindIt/MapMarker.html">FindIt::MapMarker</a>
+  
+    <li><a href="../../FindIt/RakeDefs.html">FindIt::RakeDefs</a>
+  
+    <li><a href="../../NilClass.html">NilClass</a>
+  
+    <li><a href="../../String.html">String</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class FindIt::Feature::FlatDataSet</h1>
+
+  <div id="description" class="description">
+    
 <p>A data set stored in a CSV flat file.</p>
 
-    </div><!-- description -->
+<p>The data set for an associated feature is stored in a data subdirectory.</p>
+
+<p>For instance, the feature described by:</p>
+
+<pre>lib/findit/feature/austin.ci.tx.us/fire-station.rb</pre>
+
+<p>Uses the data set stored in:</p>
+
+<pre>lib/findit/feature/austin.ci.tx.us/fire-stations/Austin_Fire_Stations.csv</pre>
+
+<p>This class makes it easy for <a
+href="Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a>
+to access the data.</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
 
     
+
     
+
     
-    <div id="5Buntitled-5D" class="documentation-section">
-      
 
-      
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
 
-      
+    
+      <div id="method-c-load" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">load</span><span
+            class="method-args">(caller, dir, file, options = {}) { |row| ... }</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
 
-      
-
-      <!-- Methods -->
-      
-      <div id="public-class-method-details" class="method-section section">
-        <h3 class="section-header">Public Class Methods</h3>
-
-      
-        <div id="load-method" class="method-detail ">
-          <a name="method-c-load"></a>
-
+        <div class="method-description">
           
-          <div class="method-heading">
-            <span class="method-name">load</span><span
-              class="method-args">(caller, dir, file, options = {})</span>
-            <span class="method-click-advice">click to toggle source</span>
-          </div>
-          
-
-          <div class="method-description">
-            
-            <p>Load a CSV data set into a list</p>
+          <p>Create a new <a href="FlatDataSet.html">FlatDataSet</a> from a CSV data
+set.</p>
 
 <p>Parameters <em>caller</em>, <em>dir</em>, and <em>file</em> are passed to
 self.path method.</p>
@@ -217,21 +219,21 @@ list.</p>
 
 <p>Example:</p>
 
-<pre>@police_stations = FindIt::Feature::FlatDataSet.load_csv(__FILE__, &quot;police-stations&quot;, &quot;Austin_Police_Stations.csv&quot;) do |row|
-  lng = row[&quot;X&quot;].to_f
-  lat = row[&quot;Y&quot;].to_f
+<pre class="ruby"><span class="ruby-ivar">@police_stations</span> = <span class="ruby-constant">FindIt</span><span class="ruby-operator">::</span><span class="ruby-constant">Feature</span><span class="ruby-operator">::</span><span class="ruby-constant">FlatDataSet</span>.<span class="ruby-identifier">load</span>(<span class="ruby-keyword">__FILE__</span>, <span class="ruby-string">&quot;police-stations&quot;</span>, <span class="ruby-string">&quot;Austin_Police_Stations.csv&quot;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">row</span><span class="ruby-operator">|</span>
+  <span class="ruby-identifier">lng</span> = <span class="ruby-identifier">row</span>[<span class="ruby-string">&quot;X&quot;</span>].<span class="ruby-identifier">to_f</span>
+  <span class="ruby-identifier">lat</span> = <span class="ruby-identifier">row</span>[<span class="ruby-string">&quot;Y&quot;</span>].<span class="ruby-identifier">to_f</span>
   {       
-    :name =&gt; row[&quot;STATION NAME&quot;],
-    :address =&gt; row[&quot;ADDRESS&quot;],
-    :location =&gt; FindIt::Location.new(lat, lng, :DEG),
+    :<span class="ruby-identifier">name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">row</span>[<span class="ruby-string">&quot;STATION NAME&quot;</span>],
+    :<span class="ruby-identifier">address</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">row</span>[<span class="ruby-string">&quot;ADDRESS&quot;</span>],
+    :<span class="ruby-identifier">location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">FindIt</span><span class="ruby-operator">::</span><span class="ruby-constant">Location</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">lat</span>, <span class="ruby-identifier">lng</span>, :<span class="ruby-constant">DEG</span>),
   }
-end</pre>
-            
+<span class="ruby-keyword">end</span>
+</pre>
+          
 
-            
-            <div class="method-source-code" id="load-source">
-<pre>
-<span class="ruby-comment"># File lib/findit/feature/flat-data-set.rb, line 63</span>
+          
+          <div class="method-source-code" id="load-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/flat-data-set.rb, line 71</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">load</span>(<span class="ruby-identifier">caller</span>, <span class="ruby-identifier">dir</span>, <span class="ruby-identifier">file</span>, <span class="ruby-identifier">options</span> = {})
   <span class="ruby-identifier">pn</span> = <span class="ruby-identifier">path</span>(<span class="ruby-identifier">caller</span>, <span class="ruby-identifier">dir</span>, <span class="ruby-identifier">file</span>)
   <span class="ruby-identifier">ds</span> = []          
@@ -241,51 +243,54 @@ end</pre>
   <span class="ruby-keyword">end</span>
   <span class="ruby-identifier">new</span>(<span class="ruby-identifier">ds</span>, <span class="ruby-identifier">options</span>)
 <span class="ruby-keyword">end</span></pre>
-            </div><!-- load-source -->
-            
-          </div>
-
+          </div><!-- load-source -->
           
+        </div>
 
+        
+
+        
+      </div><!-- load-method -->
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(dataset, options = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
           
-        </div><!-- load-method -->
+          <p>Construct a new <a href="FlatDataSet.html">FlatDataSet</a> instance.</p>
 
-      
-        <div id="new-method" class="method-detail ">
-          <a name="method-c-new"></a>
-
-          
-          <div class="method-heading">
-            <span class="method-name">new</span><span
-              class="method-args">(dataset, options = {})</span>
-            <span class="method-click-advice">click to toggle source</span>
-          </div>
-          
-
-          <div class="method-description">
-            
-            <p>Arguments:</p>
+<p>Arguments:</p>
 <ul><li>
 <p>dataset - The data set, stored as a list of hashes.</p>
 </li><li>
-<p>options</p>
+<p>options:</p>
 <ul><li>
-<p>:location - Name of a field that contains a <a
-href="../Location.html">FindIt::Location</a> value. This location is used
-by the closest() search. (default: “:location”)</p>
+<p>:location - Field that contains a location. (default: “:location”)</p>
 </li><li>
-<p>:index - If specified, a field name. The data set will be indexed on this
-field, for lookup via []. (default: none)</p>
+<p>:index - Field that should be indexed. (default: none)</p>
 </li></ul>
 </li></ul>
-            
 
-            
-            <div class="method-source-code" id="new-source">
-<pre>
-<span class="ruby-comment"># File lib/findit/feature/flat-data-set.rb, line 82</span>
+<p>The “:location” option specifies a field that contains a  <a
+href="../Location.html">FindIt::Location</a> value. The closest() method
+can then be used to obtain the row that is closest to a given location.</p>
+
+<p>The “:index” option specifies a field that should be indexed for quick
+lookup. The [] method can then be used to retrieve a row by index value.</p>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/flat-data-set.rb, line 98</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">dataset</span>, <span class="ruby-identifier">options</span> = {})
-  <span class="ruby-ivar">@dataset</span> = <span class="ruby-identifier">dataset</span>
+  <span class="ruby-ivar">@dataset</span> = <span class="ruby-identifier">dataset</span>.<span class="ruby-identifier">freeze</span>
   
   <span class="ruby-ivar">@location_field</span> = <span class="ruby-identifier">options</span>[<span class="ruby-value">:location</span>] <span class="ruby-operator">||</span> <span class="ruby-value">:location</span>
     
@@ -293,39 +298,38 @@ field, for lookup via []. (default: none)</p>
   <span class="ruby-ivar">@index_field</span> = <span class="ruby-identifier">options</span>[<span class="ruby-value">:index</span>]
   <span class="ruby-keyword">if</span> <span class="ruby-ivar">@index_field</span>
     <span class="ruby-ivar">@dataset</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">rec</span><span class="ruby-operator">|</span>
-      <span class="ruby-ivar">@dataset_indexed</span>[<span class="ruby-identifier">rec</span>[<span class="ruby-ivar">@index_field</span>]] = <span class="ruby-identifier">rec</span>
+      <span class="ruby-identifier">key</span> = <span class="ruby-identifier">rec</span>[<span class="ruby-ivar">@index_field</span>]
+      <span class="ruby-ivar">@dataset_indexed</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">rec</span>
     <span class="ruby-keyword">end</span>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
-            </div><!-- new-source -->
-            
-          </div>
-
+          </div><!-- new-source -->
           
+        </div>
 
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-c-path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">path</span><span
+            class="method-args">(caller, dir, file)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
           
-        </div><!-- new-method -->
-
-      
-        <div id="path-method" class="method-detail ">
-          <a name="method-c-path"></a>
-
-          
-          <div class="method-heading">
-            <span class="method-name">path</span><span
-              class="method-args">(caller, dir, file)</span>
-            <span class="method-click-advice">click to toggle source</span>
-          </div>
-          
-
-          <div class="method-description">
-            
-            <p>Locate an external data file for an associated feature.</p>
+          <p>Locate an external data file for an associated feature.</p>
 
 <p>Parameters:</p>
 <ul><li>
 <p>caller – The full pathname of the file containing the calling code, i.e.
-<tt>__FILE__</tt></p>
+<code>__FILE__</code></p>
 </li><li>
 <p>dir – The subdirectory for the data file.</p>
 </li><li>
@@ -334,106 +338,99 @@ field, for lookup via []. (default: none)</p>
 
 <p>Returns: The full pathname (<a href="../../String.html">String</a>).</p>
 
-<p>For example, given a file:</p>
-
-<pre>$LIBDIR/findit/feature/austin.ci.tx.us/fire-station.rb</pre>
-
-<p>Making the following call:</p>
+<p>For example:</p>
 
 <pre>self.path(__FILE__, &quot;fire-stations&quot;, &quot;Austin_Fire_Stations.csv&quot;)</pre>
 
-<p>Would produce:</p>
+<p>could be used by <em>fire-station.rb</em> to locate the fire stations data
+set.</p>
+          
 
-<pre>$LIBDIR/findit/local/austin.ci.tx.us/data/fire-stations/Austin_Fire_Stations.csv</pre>
-            
-
-            
-            <div class="method-source-code" id="path-source">
-<pre>
-<span class="ruby-comment"># File lib/findit/feature/flat-data-set.rb, line 35</span>
+          
+          <div class="method-source-code" id="path-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/flat-data-set.rb, line 43</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">path</span>(<span class="ruby-identifier">caller</span>, <span class="ruby-identifier">dir</span>, <span class="ruby-identifier">file</span>)          
   <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-identifier">caller</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/data/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">dir</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">file</span>
 <span class="ruby-keyword">end</span></pre>
-            </div><!-- path-source -->
-            
-          </div>
-
+          </div><!-- path-source -->
           
+        </div>
 
-          
-        </div><!-- path-method -->
+        
 
-      
-      </div><!-- public-class-method-details -->
+        
+      </div><!-- path-method -->
+
     
-      <div id="public-instance-method-details" class="method-section section">
-        <h3 class="section-header">Public Instance Methods</h3>
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
 
-      
-        <div id="5B-5D-method" class="method-detail ">
-          <a name="method-i-5B-5D"></a>
+    
+      <div id="method-i-5B-5D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">[]</span><span
+            class="method-args">(key)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
 
+        <div class="method-description">
           
-          <div class="method-heading">
-            <span class="method-name">[]</span><span
-              class="method-args">(key)</span>
-            <span class="method-click-advice">click to toggle source</span>
-          </div>
-          
-
-          <div class="method-description">
-            
-            <p>Lookup an entry by indexed value.</p>
+          <p>Lookup an entry by indexed value.</p>
 
 <p>Returns nil if the entry is not found or if the data set was not indexed.</p>
-            
 
-            
-            <div class="method-source-code" id="5B-5D-source">
-<pre>
-<span class="ruby-comment"># File lib/findit/feature/flat-data-set.rb, line 103</span>
+<p>A data set is indexed by using the “:index” initialization option.</p>
+          
+
+          
+          <div class="method-source-code" id="5B-5D-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/flat-data-set.rb, line 120</span>
 <span class="ruby-keyword">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">key</span>)
   <span class="ruby-ivar">@dataset_indexed</span>[<span class="ruby-identifier">key</span>]
 <span class="ruby-keyword">end</span></pre>
-            </div><!-- 5B-5D-source -->
-            
-          </div>
-
+          </div><!-- 5B-5D-source -->
           
+        </div>
 
+        
+
+        
+      </div><!-- 5B-5D-method -->
+
+    
+      <div id="method-i-closest" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">closest</span><span
+            class="method-args">(location)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
           
-        </div><!-- 5B-5D-method -->
-
-      
-        <div id="closest-method" class="method-detail ">
-          <a name="method-i-closest"></a>
-
-          
-          <div class="method-heading">
-            <span class="method-name">closest</span><span
-              class="method-args">(location)</span>
-            <span class="method-click-advice">click to toggle source</span>
-          </div>
-          
-
-          <div class="method-description">
-            
-            <p>Find the entry in the data set that is closest to the indicated location.</p>
-
-<p>Returns a hash that contains the selected record from the data set. A field
-named “:distance” will be added to the result, that contains the distance
-to the closest item (in miles).</p>
+          <p>Find the entry in the data set that is closest to the indicated location.</p>
 
 <p>Arguments:</p>
 <ul><li>
 <p>location - A <a href="../Location.html">FindIt::Location</a> instance.</p>
 </li></ul>
-            
 
-            
-            <div class="method-source-code" id="closest-source">
-<pre>
-<span class="ruby-comment"># File lib/findit/feature/flat-data-set.rb, line 117</span>
+<p>Returns a hash that contains the selected record from the data set. A field
+named “:distance” will be added to the result, that contains the distance
+to the closest item (in miles).</p>
+
+<p>The location of a row is identified by the “:loocation” initialization
+option.</p>
+          
+
+          
+          <div class="method-source-code" id="closest-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/flat-data-set.rb, line 137</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">closest</span>(<span class="ruby-identifier">location</span>)    
   <span class="ruby-identifier">feature</span> = <span class="ruby-keyword">nil</span>
   <span class="ruby-identifier">distance</span> = <span class="ruby-keyword">nil</span>          
@@ -446,29 +443,26 @@ to the closest item (in miles).</p>
   <span class="ruby-keyword">end</span>
   <span class="ruby-identifier">feature</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-value">:distance</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">distance</span>)
 <span class="ruby-keyword">end</span></pre>
-            </div><!-- closest-source -->
-            
-          </div>
-
+          </div><!-- closest-source -->
           
+        </div>
 
-          
-        </div><!-- closest-method -->
+        
 
-      
-      </div><!-- public-instance-method-details -->
+        
+      </div><!-- closest-method -->
+
     
-    </div><!-- 5Buntitled-5D -->
+    </section><!-- public-instance-method-details -->
   
+  </section><!-- 5Buntitled-5D -->
 
-  </div><!-- documentation -->
+</div><!-- documentation -->
 
-  <div id="validator-badges">
-    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-      Rdoc Generator</a> 2</small>.</p>
-  </div>
 
-</body>
-</html>
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
 
