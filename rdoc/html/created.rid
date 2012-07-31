@@ -1,0 +1,18 @@
+Mon, 30 Jul 2012 21:24:34 -0500
+INSTALL.rdoc	Mon, 30 Jul 2012 21:24:24 -0500
+README.rdoc	Mon, 30 Jul 2012 21:24:24 -0500
+LICENSE.rdoc	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/asset/image.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/asset/map-marker.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/base-feature.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/app.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/feature/austin.ci.tx.us/fire-station.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/feature/austin.ci.tx.us/police-station.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/feature/austin.ci.tx.us/historical.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/feature/austin.ci.tx.us/facility.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/feature/travis.co.tx.us/voting-place.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/feature/travis.co.tx.us/data/voting-places/tcvp-scraper.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/feature/rake-defs.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/feature/flat-data-set.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit/location.rb	Mon, 30 Jul 2012 21:24:24 -0500
+lib/findit.rb	Mon, 30 Jul 2012 21:24:24 -0500
