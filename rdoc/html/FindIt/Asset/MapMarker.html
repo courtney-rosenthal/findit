@@ -223,11 +223,11 @@
           </div>
         </div>
         
-        <div id="marker_shadow-attribute-method" class="method-detail">
-          <a name="marker_shadow"></a>
+        <div id="shadow-attribute-method" class="method-detail">
+          <a name="shadow"></a>
           
           <div class="method-heading attribute-method-heading">
-            <span class="method-name">marker_shadow</span><span
+            <span class="method-name">shadow</span><span
               class="attribute-access-type">[R]</span>
           </div>
 
@@ -260,27 +260,70 @@
 
           <div class="method-description">
             
-            
+            <p>Construct a new <a href="MapMarker.html">FindIt::Asset::MapMarker</a>.</p>
+
+<p>A <a href="MapMarker.html">MapMarker</a> is a graphic image (and an
+optional shadow image to provide 3D effect) to identify a point on a map.</p>
+
+<p>Parameters:</p>
+<ul><li>
+<p>url – The URL of the marker image file.</p>
+</li><li>
+<p>params – Parameters for the marker.</p>
+</li></ul>
+
+<p>Returns: A <a href="MapMarker.html">FindIt::Asset::MapMarker</a> instance.</p>
+
+<p>The following <em>params</em> are supported.</p>
+<ul><li>
+<p>:height =&gt; INTEGER – Height of the image in pixels. (default: <a
+href="MapMarker.html#DEFAULT_MARKER_HEIGHT">DEFAULT_MARKER_HEIGHT</a>)</p>
+</li><li>
+<p>:width =&gt; INTEGER – Width of the image in pixels. (default: <a
+href="MapMarker.html#DEFAULT_MARKER_WIDTH">DEFAULT_MARKER_WIDTH</a>)</p>
+</li><li>
+<p>:shadow =&gt; URL (default: none)</p>
+</li><li>
+<p>:height_shadow =&gt; INTEGER (default: same height as marker)</p>
+</li><li>
+<p>:width_shadow =&gt; INTEGER (default: <a
+href="MapMarker.html#DEFAULT_SHADOW_WIDTH">DEFAULT_SHADOW_WIDTH</a>)</p>
+</li></ul>
+
+<p>The :shadow URL can either be a full URL, or just a filename. If just a
+filename is specified then the URL of the marker image is used as the base
+URL.</p>
+
+<p>Example:</p>
+
+<pre>m = FindIt::Asset::MapMarker.new(
+  &quot;http://maps.google.com/mapfiles/kml/pal2/icon0.png&quot;,
+  :shadow =&gt; &quot;icon0s.png&quot;)</pre>
+
+<p>In this example, the URL for the marker shadow image will be:</p>
+
+<pre>http://maps.google.com/mapfiles/kml/pal2/icon0s.png&quot;</pre>
             
 
             
             <div class="method-source-code" id="new-source">
 <pre>
-<span class="ruby-comment"># File lib/findit/asset/map-marker.rb, line 14</span>
+<span class="ruby-comment"># File lib/findit/asset/map-marker.rb, line 49</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">url</span>, <span class="ruby-identifier">params</span> = {})
   <span class="ruby-identifier">height</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:height</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">DEFAULT_MARKER_HEIGHT</span>
   <span class="ruby-identifier">width</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:width</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">DEFAULT_MARKER_WIDTH</span>
   <span class="ruby-ivar">@marker</span> = <span class="ruby-constant">FindIt</span><span class="ruby-operator">::</span><span class="ruby-constant">Asset</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">url</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">height</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">width</span>)
-  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:shadow</span>]
+  
+  <span class="ruby-ivar">@shadow</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:shadow</span>]
     <span class="ruby-identifier">url_shadow</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:shadow</span>]
     <span class="ruby-keyword">if</span> <span class="ruby-identifier">url_shadow</span> <span class="ruby-operator">!~</span> <span class="ruby-regexp">%{/}</span>
       <span class="ruby-identifier">url_shadow</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">url</span>.<span class="ruby-identifier">sub</span>(<span class="ruby-regexp">%{[^/]*$}</span>, <span class="ruby-string">&quot;&quot;</span>))
     <span class="ruby-keyword">end</span>
     <span class="ruby-identifier">height_shadow</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:height_shadow</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">height</span>
     <span class="ruby-identifier">width_shadow</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:width_shadow</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">DEFAULT_SHADOW_WIDTH</span>
-    <span class="ruby-ivar">@marker_shadow</span> = <span class="ruby-constant">FindIt</span><span class="ruby-operator">::</span><span class="ruby-constant">Asset</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">url_shadow</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">height_shadow</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">width_shadow</span>)
+    <span class="ruby-constant">FindIt</span><span class="ruby-operator">::</span><span class="ruby-constant">Asset</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">url_shadow</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">height_shadow</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">width_shadow</span>)
   <span class="ruby-keyword">else</span>
-    <span class="ruby-ivar">@marker_shadow</span> = <span class="ruby-keyword">nil</span>
+    <span class="ruby-keyword">nil</span>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
             </div><!-- new-source -->
@@ -318,11 +361,11 @@
             
             <div class="method-source-code" id="to_h-source">
 <pre>
-<span class="ruby-comment"># File lib/findit/asset/map-marker.rb, line 31</span>
+<span class="ruby-comment"># File lib/findit/asset/map-marker.rb, line 67</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">to_h</span>
   <span class="ruby-identifier">h</span> = {}
   <span class="ruby-identifier">h</span>[<span class="ruby-value">:marker</span>] = <span class="ruby-ivar">@marker</span>.<span class="ruby-identifier">to_h</span>
-  <span class="ruby-identifier">h</span>[<span class="ruby-value">:shadow</span>] = <span class="ruby-ivar">@marker_shadow</span>.<span class="ruby-identifier">to_h</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@marker_shadow</span>
+  <span class="ruby-identifier">h</span>[<span class="ruby-value">:shadow</span>] = <span class="ruby-ivar">@shadow</span>.<span class="ruby-identifier">to_h</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@shadow</span>
   <span class="ruby-identifier">h</span>.<span class="ruby-identifier">freeze</span>
 <span class="ruby-keyword">end</span></pre>
             </div><!-- to_h-source -->
