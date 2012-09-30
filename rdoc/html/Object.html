@@ -1,205 +1,538 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+
+<html>
 <head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
-  <title>Class: Object</title>
+<title>class Object - FindIt</title>
 
-  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
 
-  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
 
-</head>
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
 <body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
 
-  <div id="metadata">
-    <div id="home-metadata">
-      <div id="home-section" class="section">
-        <h3 class="section-header">
-          <a href="./index.html">Home</a>
-          <a href="./index.html#classes">Classes</a>
-          <a href="./index.html#methods">Methods</a>
-        </h3>
-      </div>
-    </div>
 
-    <div id="file-metadata">
-      <div id="file-list-section" class="section">
-        <h3 class="section-header">In Files</h3>
-        <div class="section-body">
-          <ul>
-          
-            <li><a href="./lib/findit/feature/travis_co_tx_us/data/voting-places/tcvp-scraper_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/findit/feature/travis.co.tx.us/data/voting-places/tcvp-scraper.rb">lib/findit/feature/travis.co.tx.us/data/voting-places/tcvp-scraper.rb</a></li>
-          
-          </ul>
-        </div>
-      </div>
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
 
-      
-    </div>
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
 
-    <div id="class-metadata">
-      
-      <!-- Parent Class -->
-      <div id="parent-class-section" class="section">
-        <h3 class="section-header">Parent</h3>
-        
-        <p class="link">BasicObject</p>
-        
-      </div>
-      
 
-      
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/findit/feature/travis.co.tx.us/data/voting-places/20121106-generate.rb
+    <li>lib/findit/feature/travis.co.tx.us/data/voting-places/20120731-tcvp-scraper.rb
+  </ul>
+</nav>
 
-      
-
-      
-
-      
-    </div>
-
-    <div id="project-metadata">
-      
-      
-      <div id="fileindex-section" class="section project-section">
-        <h3 class="section-header">Files</h3>
-        <ul>
-        
-          <li class="file"><a href="./INSTALL_rdoc.html">INSTALL.rdoc</a></li>
-        
-          <li class="file"><a href="./LICENSE_rdoc.html">LICENSE.rdoc</a></li>
-        
-          <li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
-        
-        </ul>
-      </div>
-      
-
-      <div id="classindex-section" class="section project-section">
-        <h3 class="section-header">Class/Module Index
-          <span class="search-toggle"><img src="./images/find.png"
-            height="16" width="16" alt="[+]"
-            title="show/hide quicksearch" /></span></h3>
-        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-        <fieldset>
-          <legend>Quicksearch</legend>
-          <input type="text" name="quicksearch" value=""
-            class="quicksearch-field" />
-        </fieldset>
-        </form>
-
-        <ul class="link-list">
-        
-          <li><a href="./FindIt.html">FindIt</a></li>
-        
-          <li><a href="./FindIt/App.html">FindIt::App</a></li>
-        
-          <li><a href="./FindIt/Asset.html">FindIt::Asset</a></li>
-        
-          <li><a href="./FindIt/Asset/Image.html">FindIt::Asset::Image</a></li>
-        
-          <li><a href="./FindIt/Asset/MapMarker.html">FindIt::Asset::MapMarker</a></li>
-        
-          <li><a href="./FindIt/BaseFeature.html">FindIt::BaseFeature</a></li>
-        
-          <li><a href="./FindIt/Feature.html">FindIt::Feature</a></li>
-        
-          <li><a href="./FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a></li>
-        
-          <li><a href="./FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html">FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a></li>
-        
-          <li><a href="./FindIt/Feature/Austin_CI_TX_US/AbstractHistorical.html">FindIt::Feature::Austin_CI_TX_US::AbstractHistorical</a></li>
-        
-          <li><a href="./FindIt/Feature/Austin_CI_TX_US/FacilityFactory.html">FindIt::Feature::Austin_CI_TX_US::FacilityFactory</a></li>
-        
-          <li><a href="./FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
-        
-          <li><a href="./FindIt/Feature/Austin_CI_TX_US/HistoricalFactory.html">FindIt::Feature::Austin_CI_TX_US::HistoricalFactory</a></li>
-        
-          <li><a href="./FindIt/Feature/Austin_CI_TX_US/PoliceStation.html">FindIt::Feature::Austin_CI_TX_US::PoliceStation</a></li>
-        
-          <li><a href="./FindIt/Feature/FlatDataSet.html">FindIt::Feature::FlatDataSet</a></li>
-        
-          <li><a href="./FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a></li>
-        
-          <li><a href="./FindIt/Feature/Travis_CO_TX_US/AbstractVotingPlace.html">FindIt::Feature::Travis_CO_TX_US::AbstractVotingPlace</a></li>
-        
-          <li><a href="./FindIt/Feature/Travis_CO_TX_US/VotingPlaceFactory.html">FindIt::Feature::Travis_CO_TX_US::VotingPlaceFactory</a></li>
-        
-          <li><a href="./FindIt/Location.html">FindIt::Location</a></li>
-        
-          <li><a href="./FindIt/RakeDefs.html">FindIt::RakeDefs</a></li>
-        
-          <li><a href="./NilClass.html">NilClass</a></li>
-        
-          <li><a href="./Object.html">Object</a></li>
-        
-          <li><a href="./String.html">String</a></li>
-        
-        </ul>
-        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
-      </div>
-
-      
-    </div>
+    
   </div>
 
-  <div id="documentation">
-    <h1 class="class">Object</h1>
-
-    <div id="description" class="description">
-      
-    </div><!-- description -->
-
+  <div id="class-metadata">
     
-    
-    
-    <div id="5Buntitled-5D" class="documentation-section">
-      
-
-      
-
-      
-      <!-- Constants -->
-      <div id="constants-list" class="section">
-        <h3 class="section-header">Constants</h3>
-        <dl>
-        
-          <dt><a name="COLS">COLS</a></dt>
-          
-          <dd class="description"></dd>
-          
-        
-          <dt><a name="START_URL">START_URL</a></dt>
-          
-          <dd class="description"></dd>
-          
-        
-        </dl>
-      </div>
-      
-
-      
-
-      <!-- Methods -->
-      
-    </div><!-- 5Buntitled-5D -->
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
   
+  <p class="link">BasicObject
+  
+</nav>
 
-  </div><!-- documentation -->
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
 
-  <div id="validator-badges">
-    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-      Rdoc Generator</a> 2</small>.</p>
+  <ul class="link-list">
+    
+    <li><a href="#method-i-cleanup_row">#cleanup_row</a>
+    
+    <li><a href="#method-i-ensure_not_empty">#ensure_not_empty</a>
+    
+    <li><a href="#method-i-get_date">#get_date</a>
+    
+    <li><a href="#method-i-get_datetimes">#get_datetimes</a>
+    
+    <li><a href="#method-i-get_time">#get_time</a>
+    
+    <li><a href="#method-i-init_notes">#init_notes</a>
+    
+    <li><a href="#method-i-make_location">#make_location</a>
+    
+  </ul>
+</nav>
+
   </div>
 
-</body>
-</html>
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./INSTALL_rdoc.html">INSTALL</a>
+  
+    <li class="file"><a href="./LICENSE_rdoc.html">LICENSE</a>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./FindIt.html">FindIt</a>
+  
+    <li><a href="./FindIt/App.html">FindIt::App</a>
+  
+    <li><a href="./FindIt/Asset.html">FindIt::Asset</a>
+  
+    <li><a href="./FindIt/Asset/Image.html">FindIt::Asset::Image</a>
+  
+    <li><a href="./FindIt/Asset/MapMarker.html">FindIt::Asset::MapMarker</a>
+  
+    <li><a href="./FindIt/BaseFeature.html">FindIt::BaseFeature</a>
+  
+    <li><a href="./FindIt/Feature.html">FindIt::Feature</a>
+  
+    <li><a href="./FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a>
+  
+    <li><a href="./FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html">FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a>
+  
+    <li><a href="./FindIt/Feature/Austin_CI_TX_US/AbstractHistorical.html">FindIt::Feature::Austin_CI_TX_US::AbstractHistorical</a>
+  
+    <li><a href="./FindIt/Feature/Austin_CI_TX_US/FacilityFactory.html">FindIt::Feature::Austin_CI_TX_US::FacilityFactory</a>
+  
+    <li><a href="./FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a>
+  
+    <li><a href="./FindIt/Feature/Austin_CI_TX_US/HistoricalFactory.html">FindIt::Feature::Austin_CI_TX_US::HistoricalFactory</a>
+  
+    <li><a href="./FindIt/Feature/Austin_CI_TX_US/PoliceStation.html">FindIt::Feature::Austin_CI_TX_US::PoliceStation</a>
+  
+    <li><a href="./FindIt/Feature/FlatDataSet.html">FindIt::Feature::FlatDataSet</a>
+  
+    <li><a href="./FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a>
+  
+    <li><a href="./FindIt/Feature/Travis_CO_TX_US/AbstractEarlyVotingPlace.html">FindIt::Feature::Travis_CO_TX_US::AbstractEarlyVotingPlace</a>
+  
+    <li><a href="./FindIt/Feature/Travis_CO_TX_US/AbstractVotingPlace.html">FindIt::Feature::Travis_CO_TX_US::AbstractVotingPlace</a>
+  
+    <li><a href="./FindIt/Feature/Travis_CO_TX_US/ElectionDayVotingPlaces.html">FindIt::Feature::Travis_CO_TX_US::ElectionDayVotingPlaces</a>
+  
+    <li><a href="./FindIt/Feature/Travis_CO_TX_US/FixedEarlyVotingPlaces.html">FindIt::Feature::Travis_CO_TX_US::FixedEarlyVotingPlaces</a>
+  
+    <li><a href="./FindIt/Feature/Travis_CO_TX_US/MobileEarlyVotingPlaces.html">FindIt::Feature::Travis_CO_TX_US::MobileEarlyVotingPlaces</a>
+  
+    <li><a href="./FindIt/Feature/Travis_CO_TX_US/VotingLocations.html">FindIt::Feature::Travis_CO_TX_US::VotingLocations</a>
+  
+    <li><a href="./FindIt/Feature/Travis_CO_TX_US/VotingPlaceData.html">FindIt::Feature::Travis_CO_TX_US::VotingPlaceData</a>
+  
+    <li><a href="./FindIt/Feature/Travis_CO_TX_US/VotingPlaceFactory.html">FindIt::Feature::Travis_CO_TX_US::VotingPlaceFactory</a>
+  
+    <li><a href="./FindIt/Location.html">FindIt::Location</a>
+  
+    <li><a href="./FindIt/RakeDefs.html">FindIt::RakeDefs</a>
+  
+    <li><a href="./Array.html">Array</a>
+  
+    <li><a href="./NilClass.html">NilClass</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./String.html">String</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Object</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="ALLOW_ANY_VOTING_PLACE_ON_ELECTION_DAY">ALLOW_ANY_VOTING_PLACE_ON_ELECTION_DAY
+        
+        <dd class="description">
+        
+      
+        <dt id="COLS">COLS
+        
+        <dd class="description">
+        
+      
+        <dt id="ELECTION_DATE">ELECTION_DATE
+        
+        <dd class="description">
+        
+      
+        <dt id="ELECTION_DAY_HOURS">ELECTION_DAY_HOURS
+        
+        <dd class="description">
+        
+      
+        <dt id="FIXED_EV_LOCATION_HOURS_BY_CODE">FIXED_EV_LOCATION_HOURS_BY_CODE
+        
+        <dd class="description">
+        
+      
+        <dt id="INFILE_EDAY">INFILE_EDAY
+        
+        <dd class="description">
+        
+      
+        <dt id="INFILE_EVFIXED">INFILE_EVFIXED
+        
+        <dd class="description">
+        
+      
+        <dt id="INFILE_EVMOBILE">INFILE_EVMOBILE
+        
+        <dd class="description">
+        
+      
+        <dt id="LINK_INFO_BY_TYPE">LINK_INFO_BY_TYPE
+        
+        <dd class="description">
+        
+      
+        <dt id="OUTFILE">OUTFILE
+        
+        <dd class="description">
+        
+      
+        <dt id="RANGE_LAT">RANGE_LAT
+        
+        <dd class="description">
+        
+      
+        <dt id="RANGE_LNG">RANGE_LNG
+        
+        <dd class="description">
+        
+      
+        <dt id="START_URL">START_URL
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-cleanup_row" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">cleanup_row</span><span
+            class="method-args">(row)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="cleanup_row-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/travis.co.tx.us/data/voting-places/20121106-generate.rb, line 59</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">cleanup_row</span>(<span class="ruby-identifier">row</span>)
+  <span class="ruby-identifier">row</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">row</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">v</span>.<span class="ruby-identifier">cleanup</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- cleanup_row-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- cleanup_row-method -->
+
+    
+      <div id="method-i-ensure_not_empty" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ensure_not_empty</span><span
+            class="method-args">(row, *cols)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="ensure_not_empty-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/travis.co.tx.us/data/voting-places/20121106-generate.rb, line 63</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ensure_not_empty</span>(<span class="ruby-identifier">row</span>, *<span class="ruby-identifier">cols</span>)
+  <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">col</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;required column \&quot;#{col}\&quot; not defined: #{row}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">row</span>[<span class="ruby-identifier">col</span>].<span class="ruby-identifier">empty?</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ensure_not_empty-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ensure_not_empty-method -->
+
+    
+      <div id="method-i-get_date" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_date</span><span
+            class="method-args">(row, col)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_date-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/travis.co.tx.us/data/voting-places/20121106-generate.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_date</span>(<span class="ruby-identifier">row</span>, <span class="ruby-identifier">col</span>)
+  <span class="ruby-identifier">ensure_not_empty</span>(<span class="ruby-identifier">row</span>, <span class="ruby-identifier">col</span>)
+  <span class="ruby-identifier">m</span> = <span class="ruby-identifier">row</span>[<span class="ruby-identifier">col</span>].<span class="ruby-identifier">match</span>(<span class="ruby-regexp">%r[^(\d\d)/(\d{1,2})/(\d\d\d\d)$]</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;bad #{col} value \&quot;#{row[col]}\&quot;: #{row}&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span>.<span class="ruby-identifier">length</span><span class="ruby-operator">-</span><span class="ruby-value">1</span> <span class="ruby-operator">==</span> <span class="ruby-value">3</span>
+  <span class="ruby-identifier">m</span>.<span class="ruby-identifier">captures</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">to_i</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_date-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_date-method -->
+
+    
+      <div id="method-i-get_datetimes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_datetimes</span><span
+            class="method-args">(row)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_datetimes-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/travis.co.tx.us/data/voting-places/20121106-generate.rb, line 83</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_datetimes</span>(<span class="ruby-identifier">row</span>)
+  <span class="ruby-identifier">mm</span>, <span class="ruby-identifier">dd</span>, <span class="ruby-identifier">yyyy</span> = <span class="ruby-identifier">get_date</span>(<span class="ruby-identifier">row</span>, <span class="ruby-string">&quot;Date&quot;</span>)
+  <span class="ruby-identifier">start_hh</span>, <span class="ruby-identifier">start_mm</span> = <span class="ruby-identifier">get_time</span>(<span class="ruby-identifier">row</span>, <span class="ruby-string">&quot;Start Time&quot;</span>)
+  <span class="ruby-identifier">end_hh</span>, <span class="ruby-identifier">end_mm</span> = <span class="ruby-identifier">get_time</span>(<span class="ruby-identifier">row</span>, <span class="ruby-string">&quot;End Time&quot;</span>) 
+  [<span class="ruby-constant">Time</span>.<span class="ruby-identifier">local</span>(<span class="ruby-identifier">yyyy</span>, <span class="ruby-identifier">mm</span>, <span class="ruby-identifier">dd</span>, <span class="ruby-identifier">start_hh</span>, <span class="ruby-identifier">start_mm</span>), <span class="ruby-constant">Time</span>.<span class="ruby-identifier">local</span>(<span class="ruby-identifier">yyyy</span>, <span class="ruby-identifier">mm</span>, <span class="ruby-identifier">dd</span>, <span class="ruby-identifier">end_hh</span>, <span class="ruby-identifier">end_mm</span>)]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_datetimes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_datetimes-method -->
+
+    
+      <div id="method-i-get_time" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_time</span><span
+            class="method-args">(row, col)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_time-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/travis.co.tx.us/data/voting-places/20121106-generate.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_time</span>(<span class="ruby-identifier">row</span>, <span class="ruby-identifier">col</span>)
+  <span class="ruby-identifier">ensure_not_empty</span>(<span class="ruby-identifier">row</span>, <span class="ruby-identifier">col</span>)
+  <span class="ruby-identifier">m</span> = <span class="ruby-identifier">row</span>[<span class="ruby-identifier">col</span>].<span class="ruby-identifier">match</span>(<span class="ruby-regexp">%r[^(\d{1,2}):(\d\d)$]</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;bad #{col} value \&quot;#{row[col]}\&quot;: #{row}&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span>.<span class="ruby-identifier">length</span><span class="ruby-operator">-</span><span class="ruby-value">1</span> <span class="ruby-operator">==</span> <span class="ruby-value">2</span>
+  <span class="ruby-identifier">m</span>.<span class="ruby-identifier">captures</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">to_i</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_time-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_time-method -->
+
+    
+      <div id="method-i-init_notes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">init_notes</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="init_notes-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/travis.co.tx.us/data/voting-places/20121106-generate.rb, line 90</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">init_notes</span>
+  [<span class="ruby-string">&quot;&quot;</span>, <span class="ruby-constant">ELECTION_DATE</span>].<span class="ruby-identifier">dup</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- init_notes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- init_notes-method -->
+
+    
+      <div id="method-i-make_location" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">make_location</span><span
+            class="method-args">(row)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="make_location-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/travis.co.tx.us/data/voting-places/20121106-generate.rb, line 98</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">make_location</span>(<span class="ruby-identifier">row</span>)  
+  <span class="ruby-identifier">ensure_not_empty</span>(<span class="ruby-identifier">row</span>, <span class="ruby-string">&quot;Name&quot;</span>, <span class="ruby-string">&quot;Address&quot;</span>, <span class="ruby-string">&quot;City&quot;</span>, <span class="ruby-string">&quot;Zipcode&quot;</span>, <span class="ruby-string">&quot;Longitude&quot;</span>, <span class="ruby-string">&quot;Latitude&quot;</span>)
+
+  <span class="ruby-identifier">zip</span> = <span class="ruby-identifier">row</span>[<span class="ruby-string">&quot;Zipcode&quot;</span>]
+  <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;bad zip value \&quot;Zipcode\&quot;: #{zip}&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">zip</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%r^78[67]\d\d$/</span>
+
+  <span class="ruby-identifier">v</span> = <span class="ruby-identifier">row</span>[<span class="ruby-string">&quot;Longitude&quot;</span>]
+  <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;required column \&quot;#{&quot;Longitude&quot;}\&quot; not defined: #{row}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">empty?</span>
+  <span class="ruby-identifier">lng</span> = <span class="ruby-identifier">v</span>.<span class="ruby-identifier">to_f</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;longitude \&quot;#{lng}\&quot; outside of expected range (#{RANGE_LNG}): #{row}&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-constant">RANGE_LNG</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">lng</span>)
+  
+  <span class="ruby-identifier">v</span> = <span class="ruby-identifier">row</span>[<span class="ruby-string">&quot;Latitude&quot;</span>]
+  <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;required column \&quot;#{&quot;Latitude&quot;}\&quot; not defined: #{row}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">empty?</span>
+  <span class="ruby-identifier">lat</span> = <span class="ruby-identifier">v</span>.<span class="ruby-identifier">to_f</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;latitude \&quot;#{lat}\&quot; outside of expected range (#{RANGE_LAT}): #{row}&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-constant">RANGE_LAT</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">lat</span>)
+
+  <span class="ruby-identifier">id</span> = <span class="ruby-node">&quot;#{lat},#{lng}&quot;</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span> <span class="ruby-ivar">@locations</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">id</span>) <span class="ruby-operator">||</span> <span class="ruby-ivar">@locations</span>[<span class="ruby-identifier">id</span>][<span class="ruby-value">:name</span>] <span class="ruby-operator">=~</span> <span class="ruby-regexp">%r^combined/</span>
+    <span class="ruby-ivar">@locations</span>[<span class="ruby-identifier">id</span>] = {
+      <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>,
+      <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">row</span>[<span class="ruby-string">&quot;Name&quot;</span>],
+      <span class="ruby-value">:street</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">row</span>[<span class="ruby-string">&quot;Address&quot;</span>],
+      <span class="ruby-value">:city</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">row</span>[<span class="ruby-string">&quot;City&quot;</span>],
+      <span class="ruby-value">:state</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;TX&quot;</span>,
+      <span class="ruby-value">:zip</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">zip</span>,
+      <span class="ruby-value">:location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">FindIt</span><span class="ruby-operator">::</span><span class="ruby-constant">Location</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">lat</span>, <span class="ruby-identifier">lng</span>, <span class="ruby-value">:DEG</span>),
+    }
+  <span class="ruby-keyword">end</span>  
+  
+  <span class="ruby-identifier">id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- make_location-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- make_location-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
 

@@ -1,222 +1,222 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+
+<html>
 <head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
-  <title>Class: FindIt::Feature::Austin_CI_TX_US::AbstractFacility</title>
+<title>class FindIt::Feature::Austin_CI_TX_US::AbstractFacility - FindIt</title>
 
-  <link rel="stylesheet" href="../../../rdoc.css" type="text/css" media="screen" />
+<link type="text/css" media="screen" href="../../../rdoc.css" rel="stylesheet">
 
-  <script src="../../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../../../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
 
-</head>
+<script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/darkfish.js"></script>
+
+
 <body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../../index.html">Home</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
 
-  <div id="metadata">
-    <div id="home-metadata">
-      <div id="home-section" class="section">
-        <h3 class="section-header">
-          <a href="../../../index.html">Home</a>
-          <a href="../../../index.html#classes">Classes</a>
-          <a href="../../../index.html#methods">Methods</a>
-        </h3>
-      </div>
-    </div>
 
-    <div id="file-metadata">
-      <div id="file-list-section" class="section">
-        <h3 class="section-header">In Files</h3>
-        <div class="section-body">
-          <ul>
-          
-            <li><a href="../../../lib/findit/feature/austin_ci_tx_us/facility_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/findit/feature/austin.ci.tx.us/facility.rb">lib/findit/feature/austin.ci.tx.us/facility.rb</a></li>
-          
-          </ul>
-        </div>
-      </div>
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
 
-      
-    </div>
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
 
-    <div id="class-metadata">
-      
-      <!-- Parent Class -->
-      <div id="parent-class-section" class="section">
-        <h3 class="section-header">Parent</h3>
-        
-        <p class="link"><a href="../../BaseFeature.html">FindIt::BaseFeature</a></p>
-        
-      </div>
-      
 
-      
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/findit/feature/austin.ci.tx.us/facility.rb
+  </ul>
+</nav>
 
-      
-
-      
-      <!-- Method Quickref -->
-      <div id="method-list-section" class="section">
-        <h3 class="section-header">Methods</h3>
-        <ul class="link-list">
-          
-          <li><a href="#method-c-closest">::closest</a></li>
-          
-          <li><a href="#method-c-facility_title">::facility_title</a></li>
-          
-          <li><a href="#method-c-facility_type">::facility_type</a></li>
-          
-        </ul>
-      </div>
-      
-
-      
-    </div>
-
-    <div id="project-metadata">
-      
-      
-      <div id="fileindex-section" class="section project-section">
-        <h3 class="section-header">Files</h3>
-        <ul>
-        
-          <li class="file"><a href="../../../INSTALL_rdoc.html">INSTALL.rdoc</a></li>
-        
-          <li class="file"><a href="../../../LICENSE_rdoc.html">LICENSE.rdoc</a></li>
-        
-          <li class="file"><a href="../../../README_rdoc.html">README.rdoc</a></li>
-        
-        </ul>
-      </div>
-      
-
-      <div id="classindex-section" class="section project-section">
-        <h3 class="section-header">Class/Module Index
-          <span class="search-toggle"><img src="../../../images/find.png"
-            height="16" width="16" alt="[+]"
-            title="show/hide quicksearch" /></span></h3>
-        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-        <fieldset>
-          <legend>Quicksearch</legend>
-          <input type="text" name="quicksearch" value=""
-            class="quicksearch-field" />
-        </fieldset>
-        </form>
-
-        <ul class="link-list">
-        
-          <li><a href="../../../FindIt.html">FindIt</a></li>
-        
-          <li><a href="../../../FindIt/App.html">FindIt::App</a></li>
-        
-          <li><a href="../../../FindIt/Asset.html">FindIt::Asset</a></li>
-        
-          <li><a href="../../../FindIt/Asset/Image.html">FindIt::Asset::Image</a></li>
-        
-          <li><a href="../../../FindIt/Asset/MapMarker.html">FindIt::Asset::MapMarker</a></li>
-        
-          <li><a href="../../../FindIt/BaseFeature.html">FindIt::BaseFeature</a></li>
-        
-          <li><a href="../../../FindIt/Feature.html">FindIt::Feature</a></li>
-        
-          <li><a href="../../../FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a></li>
-        
-          <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html">FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a></li>
-        
-          <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/AbstractHistorical.html">FindIt::Feature::Austin_CI_TX_US::AbstractHistorical</a></li>
-        
-          <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/FacilityFactory.html">FindIt::Feature::Austin_CI_TX_US::FacilityFactory</a></li>
-        
-          <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a></li>
-        
-          <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/HistoricalFactory.html">FindIt::Feature::Austin_CI_TX_US::HistoricalFactory</a></li>
-        
-          <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/PoliceStation.html">FindIt::Feature::Austin_CI_TX_US::PoliceStation</a></li>
-        
-          <li><a href="../../../FindIt/Feature/FlatDataSet.html">FindIt::Feature::FlatDataSet</a></li>
-        
-          <li><a href="../../../FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a></li>
-        
-          <li><a href="../../../FindIt/Feature/Travis_CO_TX_US/AbstractVotingPlace.html">FindIt::Feature::Travis_CO_TX_US::AbstractVotingPlace</a></li>
-        
-          <li><a href="../../../FindIt/Feature/Travis_CO_TX_US/VotingPlaceFactory.html">FindIt::Feature::Travis_CO_TX_US::VotingPlaceFactory</a></li>
-        
-          <li><a href="../../../FindIt/Location.html">FindIt::Location</a></li>
-        
-          <li><a href="../../../FindIt/RakeDefs.html">FindIt::RakeDefs</a></li>
-        
-          <li><a href="../../../NilClass.html">NilClass</a></li>
-        
-          <li><a href="../../../Object.html">Object</a></li>
-        
-          <li><a href="../../../String.html">String</a></li>
-        
-        </ul>
-        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
-      </div>
-
-      
-    </div>
+    
   </div>
 
-  <div id="documentation">
-    <h1 class="class">FindIt::Feature::Austin_CI_TX_US::AbstractFacility</h1>
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="../../BaseFeature.html">FindIt::BaseFeature</a>
+  
+</nav>
 
-    <div id="description" class="description">
-      
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-closest">::closest</a>
+    
+    <li><a href="#method-c-facility_title">::facility_title</a>
+    
+    <li><a href="#method-c-facility_type">::facility_type</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../../INSTALL_rdoc.html">INSTALL</a>
+  
+    <li class="file"><a href="../../../LICENSE_rdoc.html">LICENSE</a>
+  
+    <li class="file"><a href="../../../README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../FindIt.html">FindIt</a>
+  
+    <li><a href="../../../FindIt/App.html">FindIt::App</a>
+  
+    <li><a href="../../../FindIt/Asset.html">FindIt::Asset</a>
+  
+    <li><a href="../../../FindIt/Asset/Image.html">FindIt::Asset::Image</a>
+  
+    <li><a href="../../../FindIt/Asset/MapMarker.html">FindIt::Asset::MapMarker</a>
+  
+    <li><a href="../../../FindIt/BaseFeature.html">FindIt::BaseFeature</a>
+  
+    <li><a href="../../../FindIt/Feature.html">FindIt::Feature</a>
+  
+    <li><a href="../../../FindIt/Feature/Austin_CI_TX_US.html">FindIt::Feature::Austin_CI_TX_US</a>
+  
+    <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/AbstractFacility.html">FindIt::Feature::Austin_CI_TX_US::AbstractFacility</a>
+  
+    <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/AbstractHistorical.html">FindIt::Feature::Austin_CI_TX_US::AbstractHistorical</a>
+  
+    <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/FacilityFactory.html">FindIt::Feature::Austin_CI_TX_US::FacilityFactory</a>
+  
+    <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/FireStation.html">FindIt::Feature::Austin_CI_TX_US::FireStation</a>
+  
+    <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/HistoricalFactory.html">FindIt::Feature::Austin_CI_TX_US::HistoricalFactory</a>
+  
+    <li><a href="../../../FindIt/Feature/Austin_CI_TX_US/PoliceStation.html">FindIt::Feature::Austin_CI_TX_US::PoliceStation</a>
+  
+    <li><a href="../../../FindIt/Feature/FlatDataSet.html">FindIt::Feature::FlatDataSet</a>
+  
+    <li><a href="../../../FindIt/Feature/Travis_CO_TX_US.html">FindIt::Feature::Travis_CO_TX_US</a>
+  
+    <li><a href="../../../FindIt/Feature/Travis_CO_TX_US/AbstractEarlyVotingPlace.html">FindIt::Feature::Travis_CO_TX_US::AbstractEarlyVotingPlace</a>
+  
+    <li><a href="../../../FindIt/Feature/Travis_CO_TX_US/AbstractVotingPlace.html">FindIt::Feature::Travis_CO_TX_US::AbstractVotingPlace</a>
+  
+    <li><a href="../../../FindIt/Feature/Travis_CO_TX_US/ElectionDayVotingPlaces.html">FindIt::Feature::Travis_CO_TX_US::ElectionDayVotingPlaces</a>
+  
+    <li><a href="../../../FindIt/Feature/Travis_CO_TX_US/FixedEarlyVotingPlaces.html">FindIt::Feature::Travis_CO_TX_US::FixedEarlyVotingPlaces</a>
+  
+    <li><a href="../../../FindIt/Feature/Travis_CO_TX_US/MobileEarlyVotingPlaces.html">FindIt::Feature::Travis_CO_TX_US::MobileEarlyVotingPlaces</a>
+  
+    <li><a href="../../../FindIt/Feature/Travis_CO_TX_US/VotingLocations.html">FindIt::Feature::Travis_CO_TX_US::VotingLocations</a>
+  
+    <li><a href="../../../FindIt/Feature/Travis_CO_TX_US/VotingPlaceData.html">FindIt::Feature::Travis_CO_TX_US::VotingPlaceData</a>
+  
+    <li><a href="../../../FindIt/Feature/Travis_CO_TX_US/VotingPlaceFactory.html">FindIt::Feature::Travis_CO_TX_US::VotingPlaceFactory</a>
+  
+    <li><a href="../../../FindIt/Location.html">FindIt::Location</a>
+  
+    <li><a href="../../../FindIt/RakeDefs.html">FindIt::RakeDefs</a>
+  
+    <li><a href="../../../Array.html">Array</a>
+  
+    <li><a href="../../../NilClass.html">NilClass</a>
+  
+    <li><a href="../../../Object.html">Object</a>
+  
+    <li><a href="../../../String.html">String</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class FindIt::Feature::Austin_CI_TX_US::AbstractFacility</h1>
+
+  <div id="description" class="description">
+    
 <p>Abstract class derived from <a
 href="../../BaseFeature.html">FindIt::BaseFeature</a> to represent a
 variety of features found in the City of Austin “facilities” GIS dataset.</p>
 
-    </div><!-- description -->
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
 
     
+
     
+
     
-    <div id="5Buntitled-5D" class="documentation-section">
-      
 
-      
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
 
-      
+    
+      <div id="method-c-closest" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">closest</span><span
+            class="method-args">(origin)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
 
-      
-
-      <!-- Methods -->
-      
-      <div id="public-class-method-details" class="method-section section">
-        <h3 class="section-header">Public Class Methods</h3>
-
-      
-        <div id="closest-method" class="method-detail ">
-          <a name="method-c-closest"></a>
+        <div class="method-description">
+          
+          <p>See: <a
+href="../../BaseFeature.html#method-c-closest">FindIt::BaseFeature.closest</a></p>
+          
 
           
-          <div class="method-heading">
-            <span class="method-name">closest</span><span
-              class="method-args">(origin)</span>
-            <span class="method-click-advice">click to toggle source</span>
-          </div>
-          
-
-          <div class="method-description">
-            
-            <p>See: <a
-href="../../BaseFeature.html#method-c-closest">FindIt::BaseFeature::closest</a></p>
-            
-
-            
-            <div class="method-source-code" id="closest-source">
-<pre>
-<span class="ruby-comment"># File lib/findit/feature/austin.ci.tx.us/facility.rb, line 64</span>
+          <div class="method-source-code" id="closest-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/austin.ci.tx.us/facility.rb, line 64</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">closest</span>(<span class="ruby-identifier">origin</span>)
 
-  <span class="ruby-identifier">sth</span> = <span class="ruby-ivar">@db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">%{SELECT *,
+  <span class="ruby-identifier">sth</span> = <span class="ruby-ivar">@db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">%q{SELECT *,
     ST_X(ST_Transform(the_geom, 4326)) AS longitude,
     ST_Y(ST_Transform(the_geom, 4326)) AS latitude,
     ST_Distance(ST_Transform(the_geom, 4326), ST_SetSRID(ST_Point(?, ?), 4326)) AS distance
@@ -240,97 +240,88 @@ href="../../BaseFeature.html#method-c-closest">FindIt::BaseFeature::closest</a><
   )
   
 <span class="ruby-keyword">end</span></pre>
-            </div><!-- closest-source -->
-            
-          </div>
+          </div><!-- closest-source -->
+          
+        </div>
 
+        
+
+        
+      </div><!-- closest-method -->
+
+    
+      <div id="method-c-facility_title" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">facility_title</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
           
 
           
-        </div><!-- closest-method -->
-
-      
-        <div id="facility_title-method" class="method-detail ">
-          <a name="method-c-facility_title"></a>
-
-          
-          <div class="method-heading">
-            <span class="method-name">facility_title</span><span
-              class="method-args">()</span>
-            <span class="method-click-advice">click to toggle source</span>
-          </div>
-          
-
-          <div class="method-description">
-            
-            
-            
-
-            
-            <div class="method-source-code" id="facility_title-source">
-<pre>
-<span class="ruby-comment"># File lib/findit/feature/austin.ci.tx.us/facility.rb, line 50</span>
+          <div class="method-source-code" id="facility_title-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/austin.ci.tx.us/facility.rb, line 50</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">facility_title</span>
   <span class="ruby-identifier">raise</span> <span class="ruby-constant">NameError</span>, <span class="ruby-node">&quot;class instance parameter \&quot;facility_title\&quot; not initialized for class \&quot;#{self.name}\&quot;&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@facility_title</span>
   <span class="ruby-ivar">@facility_title</span>
 <span class="ruby-keyword">end</span></pre>
-            </div><!-- facility_title-source -->
-            
-          </div>
+          </div><!-- facility_title-source -->
+          
+        </div>
 
+        
+
+        
+      </div><!-- facility_title-method -->
+
+    
+      <div id="method-c-facility_type" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">facility_type</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
           
 
           
-        </div><!-- facility_title-method -->
-
-      
-        <div id="facility_type-method" class="method-detail ">
-          <a name="method-c-facility_type"></a>
-
-          
-          <div class="method-heading">
-            <span class="method-name">facility_type</span><span
-              class="method-args">()</span>
-            <span class="method-click-advice">click to toggle source</span>
-          </div>
-          
-
-          <div class="method-description">
-            
-            
-            
-
-            
-            <div class="method-source-code" id="facility_type-source">
-<pre>
-<span class="ruby-comment"># File lib/findit/feature/austin.ci.tx.us/facility.rb, line 55</span>
+          <div class="method-source-code" id="facility_type-source">
+            <pre><span class="ruby-comment"># File lib/findit/feature/austin.ci.tx.us/facility.rb, line 55</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">facility_type</span>
   <span class="ruby-identifier">raise</span> <span class="ruby-constant">NameError</span>, <span class="ruby-node">&quot;class instance parameter \&quot;facility_type\&quot; not initialized for class \&quot;#{self.name}\&quot;&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@facility_type</span>
   <span class="ruby-ivar">@facility_type</span>
 <span class="ruby-keyword">end</span></pre>
-            </div><!-- facility_type-source -->
-            
-          </div>
-
+          </div><!-- facility_type-source -->
           
+        </div>
 
-          
-        </div><!-- facility_type-method -->
+        
 
-      
-      </div><!-- public-class-method-details -->
+        
+      </div><!-- facility_type-method -->
+
     
-    </div><!-- 5Buntitled-5D -->
+    </section><!-- public-class-method-details -->
   
+  </section><!-- 5Buntitled-5D -->
 
-  </div><!-- documentation -->
+</div><!-- documentation -->
 
-  <div id="validator-badges">
-    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-      Rdoc Generator</a> 2</small>.</p>
-  </div>
 
-</body>
-</html>
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
 
