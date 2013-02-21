@@ -1,7 +1,7 @@
 require "sequel"
 require "logger"
 
-module FindIt
+module ATXRecyclesSvc
   module Database    
       
     @log = Logger.new($stderr)
@@ -66,7 +66,7 @@ module FindIt
 
     
   end # module Database
-end # module FindIt
+end # module ATXRecyclesSvc
 
 module Sequel
   class Dataset

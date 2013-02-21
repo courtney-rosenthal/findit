@@ -1,5 +1,5 @@
 require 'rubygems'
 require 'sinatra'
 
-load "./bin/findit-svc"
+load "./bin/atx-recycles-svc"
 run Sinatra::Application

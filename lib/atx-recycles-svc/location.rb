@@ -1,4 +1,4 @@
-module FindIt
+module ATXRecyclesSvc
   
   #
   # A geographic location, identified by a latitude and longitude.
@@ -21,7 +21,7 @@ module FindIt
     #
     # * type -- Either </tt>:DEG<tt> or <tt>:RAD</tt>.
     #
-    # Returns: A FindIt::Location instance.
+    # Returns: A ATXRecyclesSvc::Location instance.
     #
     # Latitude/longitude can be specified as either degrees or radians.
     # The unit type must be specified in the <i>type</i> argument.
@@ -68,6 +68,14 @@ module FindIt
     def lng
       @longitude_deg
     end
+    
+    # For response serialization.
+    def to_h
+      {
+        :latitude => @latitude_deg,
+        :longitude => @longitude_deg,
+      }
+    end    
   
     # Earth mean radius, in miles.
     EARTH_R = 3963.0 
@@ -80,7 +88,7 @@ module FindIt
     #
     # Parameter:
     #
-    # * loc -- A FindIt::Location instance, to measure the distance to.
+    # * loc -- A ATXRecyclesSvc::Location instance, to measure the distance to.
     #
     # Returns: The calculated distance, in miles.
     #
@@ -91,4 +99,4 @@ module FindIt
     end  
     
   end # class Location
-end # module FindIt
+end # module ATXRecyclesSvc

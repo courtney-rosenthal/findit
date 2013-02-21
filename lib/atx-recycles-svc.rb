@@ -1,6 +1,5 @@
-require 'findit/database'
-require 'findit/location'
-require 'findit/base-feature'
+require 'atx-recycles-svc/database'
+require 'atx-recycles-svc/location'
 
 class String
   
