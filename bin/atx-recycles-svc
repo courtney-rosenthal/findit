@@ -16,10 +16,6 @@ end
 
 @@app = ATXRecyclesSvc::App.new
 
-get "/" do
-  redirect to("/index.html")
-end
-
 get "/svc" do
   params = request.env['rack.request.query_hash']
   lat = params["latitude"]
