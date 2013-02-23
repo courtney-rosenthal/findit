@@ -27,7 +27,7 @@ begin
 
   desc 'Remove the generated documentation'
   task :clean do
-    puts "removing rdoc documentation"
+    puts 'removing rdoc documentation'
     FileUtils.rm_rf File.expand_path(Settings[:rdoc_output_dir], Rake.application.original_dir)
   end
 
@@ -39,7 +39,7 @@ begin
     rdoc.rdoc_files.include("{#{Settings[:source_dirs].join(',')}}/**/*.rb")
   end
 rescue LoadError
-  warn "rdoc not available, rdoc tasks not provided."
+  warn 'rdoc not available, rdoc tasks not provided.'
 rescue Exception => ex
   warn "#{ex.to_s}, rdoc tasks not provided."
 end

@@ -1,10 +1,12 @@
+require 'atx-recycles-svc/app'
 require 'atx-recycles-svc/database'
 require 'atx-recycles-svc/location'
+require 'atx-recycles-svc/collection-route'
 
 class String
   
   def capitalize_words
-    self.split.map{|w| w.capitalize}.join(" ")
+    self.split.map{|w| w.capitalize}.join(' ')
   end
     
   require 'cgi'

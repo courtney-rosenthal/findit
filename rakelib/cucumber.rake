@@ -8,13 +8,13 @@
 
 begin
   require 'cucumber/rake/task'
-  Cucumber::Rake::Task.new(:features)
+  Cucumber::Rake::Task.new(:features, 'Run cucumber features')
 
   namespace :features do
-    desc "Create feature coverage"
+    desc 'Create feature coverage'
     task :coverage do
       ENV['COVERAGE'] = 'true'
-      Rake::Task["features"].execute
+      Rake::Task['features'].execute
     end
   end
 
@@ -27,13 +27,13 @@ begin
       env_file = File.join(dir, 'env.rb')
       unless File.exist? env_file
         File.open(env_file, 'w') do |f|
-          f.puts "require 'simplecov_helper' if ENV['COVERAGE'] == 'true'"
-          f.puts "require 'rspec'"
+          f.puts 'require \'simplecov_helper\' if ENV[\'COVERAGE\'] == \'true\''
+          f.puts 'require \'rspec\''
           f.puts "require_relative('../../lib/#{Settings[:app_dir]}')"
         end
       end
     end
   end
 rescue LoadError
-  warn "cucumber not available, cucumber task not provided."
+  warn 'cucumber not available, cucumber task not provided.'
 end

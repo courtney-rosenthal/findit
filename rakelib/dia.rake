@@ -11,8 +11,8 @@ require File.expand_path('rakelib/settings.rb', Rake.application.original_dir)
 
 desc 'build SVG images from diagrams'
 task :dia_to_svg do
-  puts "building svg images from diagrams"
-  Dir["**/*.dia"].each do |src|
+  puts 'building svg images from diagrams'
+  Dir['**/*.dia'].each do |src|
     filename = File.expand_path(File.basename(src, '.*'), File.dirname(src))
     puts "dia --export=#{filename}.svg #{filename}.dia"
     puts `dia --export=#{filename}.svg #{filename}.dia`
@@ -21,8 +21,8 @@ end
 
 desc 'build PDF images from diagrams'
 task :dia_to_pdf do
-  puts "building pdf images from diagrams"
-  Dir["**/*.dia"].each do |src|
+  puts 'building pdf images from diagrams'
+  Dir['**/*.dia'].each do |src|
     filename = File.expand_path(File.basename(src, '.*'), File.dirname(src))
     puts "dia --export=#{filename}.pdf #{filename}.dia"
     puts `dia --export=#{filename}.pdf #{filename}.dia`
@@ -31,8 +31,8 @@ end
 
 desc 'build PNG images from diagrams'
 task :dia_to_png do
-  puts "building png images from diagrams"
-  Dir["**/*.dia"].each do |src|
+  puts 'building png images from diagrams'
+  Dir['**/*.dia'].each do |src|
     filename = File.expand_path(File.basename(src, '.*'), File.dirname(src))
     puts "dia --export=#{filename}.png #{filename}.dia"
     puts `dia --export=#{filename}.png #{filename}.dia`
@@ -40,7 +40,7 @@ task :dia_to_png do
 end
 
 task :clean do
-  FileUtils.rm_f Dir["*.pdf"]
-  FileUtils.rm_f Dir["*.png"]
-  FileUtils.rm_f Dir["*.svg"]
+  FileUtils.rm_f Dir['*.pdf']
+  FileUtils.rm_f Dir['*.png']
+  FileUtils.rm_f Dir['*.svg']
 end

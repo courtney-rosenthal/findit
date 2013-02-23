@@ -93,9 +93,9 @@ module ATXRecyclesSvc
     # Returns: The calculated distance, in miles.
     #
     def distance(loc)
-      x = (loc.longitude_rad-self.longitude_rad) * Math.cos((self.latitude_rad+loc.latitude_rad)/2);
-      y = (loc.latitude_rad-self.latitude_rad);
-      Math.sqrt(x*x + y*y) * EARTH_R;
+      x = (loc.longitude_rad-self.longitude_rad) * Math.cos((self.latitude_rad+loc.latitude_rad)/2)
+      y = (loc.latitude_rad-self.latitude_rad)
+      Math.sqrt(x*x + y*y) * EARTH_R
     end  
     
   end # class Location

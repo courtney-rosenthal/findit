@@ -10,7 +10,7 @@ require File.expand_path('rakelib/settings.rb', Rake.application.original_dir)
 #   * Settings[:source_dirs]
 module Version
   # The regex for extracting the version from a version.rb file
-  VERSION_REGEX = /VERSION\s*=\s*[\"\']?(\d[^\"\']*)[\"\']?/m
+  VERSION_REGEX = /VERSION\s*=\s*["']?(\d[^"']*)["']?/m
 
   # Get the paths to all the version.rb files
   # @return [Array<String>] relative paths to version.rb files
