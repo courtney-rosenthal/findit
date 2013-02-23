@@ -112,7 +112,7 @@ For example, override the application name from the Rakefile:
   Settings[:app_name] = 'my glorious application'
 
 Keys => values are:
-#{@setting_descriptions.map{|key, value| "  #{sprintf("%20s", ':' + key.to_s)} => #{value}"}.join("\n")}
+#{@setting_descriptions.map{|key, value| "  #{sprintf('%20s', ':' + key.to_s)} => #{value}"}.join("\n")}
     END_SETTINGS_HELP
   end
 end

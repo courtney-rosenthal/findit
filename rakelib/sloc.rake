@@ -6,7 +6,7 @@
 # rake sloc                # generate sloccount metric reports used by Jenkins
 
 unless `which sloccount`.strip.empty?
-  desc "generate sloccount metric reports used by Jenkins"
+  desc 'generate sloccount metric reports used by Jenkins'
   task :sloc do
     FileUtils.mkdir_p File.dirname(Settings[:sloc_report])
     FileUtils.mkdir_p File.dirname(Settings[:sloc_report_raw])
@@ -23,7 +23,7 @@ unless `which sloccount`.strip.empty?
     report = IO.readlines(Settings[:sloc_report_raw]).select{|line| line =~ /^\d+\s+/}
 
     File.delete Settings[:sloc_report] if File.exist? Settings[:sloc_report]
-    File.open(Settings[:sloc_report], "w") do |f|
+    File.open(Settings[:sloc_report], 'w') do |f|
       report.each do |line|
         line = line.strip
         next if line.empty?

@@ -1,5 +1,5 @@
-require "sequel"
-require "logger"
+require 'sequel'
+#require "logger"
 
 module ATXRecyclesSvc
   module Database    
@@ -20,6 +20,7 @@ module ATXRecyclesSvc
     #
     def self.connect(database, opts = {})
       @log.debug("connect: entered, database=#{database}")
+      #noinspection RubyResolve
       raise Errno::ENOENT, database unless File.exist?(database)
       
       case opts[:log]
@@ -39,7 +40,7 @@ module ATXRecyclesSvc
         db.sql_log_level = opts[:log_level] || :debug
       end
       
-      db.get{load_extension(opts[:spatialite] || "libspatialite.so")}
+      db.get{load_extension(opts[:spatialite] || 'libspatialite.so')}
       # will raise an error if spatialite not loaded
       ver = db.get{spatialite_version{}}
 
@@ -49,19 +50,19 @@ module ATXRecyclesSvc
     
     
     # Run the "shp2pgsql" command on a shape file and load the output.
-    def load_shapefile(table, shapefile, srid, codepage = "CP1252")
+    def load_shapefile(table, shapefile, srid, codepage = 'CP1252')
       self.log.debug("load_shapefile: entered, table=\"#{table}\", shapefile=\"#{shapefile}\", srid=\"#{srid}\", codepage=\"#{codepage}\"")   
-      cmdv = ["spatialite_tool", "-i",
-        "-shp", shapefile,
-        "-d", self.name,
-        "-t", table,
-        "-c", codepage,
-        "-s", srid,
+      cmdv = ['spatialite_tool', '-i',
+              '-shp', shapefile,
+              '-d', self.name,
+              '-t', table,
+              '-c', codepage,
+              '-s', srid,
       ]
       unless system(cmdv)
         raise "system() failed: #{$?}"
       end
-      self.log.debug("load_shapefile: done")
+      self.log.debug('load_shapefile: done')
     end
 
     

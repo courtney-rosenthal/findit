@@ -20,7 +20,7 @@ require File.expand_path('rakelib/gemspec_file.rb', Rake.application.original_di
 
 namespace :update do
   unless @gemspec.nil?
-    desc "Update the #{@gemspec} file with dependencies from rakelib/*.rake files"
+    desc "Update the #@gemspec file with dependencies from rakelib/*.rake files"
     task :gemspec do
       add_dependency = []
       add_development_dependency = []
