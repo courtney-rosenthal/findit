@@ -29,7 +29,7 @@ begin
     def format(result)
       SimpleCov::Formatter::HTMLFormatter.new.format(result)
       SimpleCov::Formatter::RcovFormatter.new.format(result)
-      File.open("#{coverage_directory}/covered_percent", "w") do |f|
+      File.open("#{coverage_directory}/covered_percent", 'w') do |f|
         f.puts result.source_files.covered_percent.to_f
       end
     end

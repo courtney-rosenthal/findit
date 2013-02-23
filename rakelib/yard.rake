@@ -50,13 +50,14 @@ begin
   begin
     require 'yard-blame'
   rescue LoadError
+    # intentionally empty
   end
 
   require File.expand_path('version.rb', File.dirname(__FILE__))
 
   desc 'Remove the generated documentation'
   task :clean do
-    puts "removing yard documentation"
+    puts 'removing yard documentation'
     FileUtils.rm_rf File.expand_path(Settings[:yard_output_dir], Rake.application.original_dir)
     FileUtils.rm_rf File.expand_path('.yardoc', Rake.application.original_dir)
   end
@@ -94,7 +95,7 @@ begin
                  '--output-dir', Settings[:yard_output_dir],
                  '--protected', '--private', '--embed-mixins',
                  '--markup', 'markdown',
-                 '--files', Dir["*.md"].join(','),
+                 '--files', Dir['*.md'].join(','),
                  '--readme', 'README.md']
     #puts "t.files => #{t.files.pretty_inspect}"
   end
@@ -102,12 +103,13 @@ begin
   require 'digest/md5'
   task :yard_config do
     FileUtils.mkdir_p File.expand_path('~/.yard')
-    config_file = File.expand_path("~/.yard/config")
+    config_file = File.expand_path('~/.yard/config')
     config = SymbolHash.new
     config = YAML.load IO.read(config_file) if File.exist? config_file
     config_sha1 = Digest::MD5.hexdigest(config.to_s)
-    config[:'yard-cucumber'] ||= {"menus"=>["features", "tags", "steps", "step definitions", "specifications"],
-                                  "language"=>{"step_definitions"=>["Given", "When", "Then", "And"]}}
+    #noinspection RubyStringKeysInHashInspection,RubyStringKeysInHashInspection,RubyStringKeysInHashInspection
+    config[:'yard-cucumber'] ||= {'menus' =>['features', 'tags', 'steps', 'step definitions', 'specifications'],
+                                  'language' =>{'step_definitions' =>['Given', 'When', 'Then', 'And']}}
     config[:'load_plugins'] ||= true
     config[:'ignored_plugins'] ||= []
     config[:'autoload_plugins'] ||= []
@@ -119,13 +121,13 @@ begin
 
   task :yard => [:yard_config] do
     puts "cp #{Dir['*.svg']}, #{Settings[:yard_output_dir]}"
-    FileUtils.cp Dir["*.svg"], Settings[:yard_output_dir]
-    FileUtils.cp Dir["*.pdf"], Settings[:yard_output_dir]
-    FileUtils.cp Dir["*.png"], Settings[:yard_output_dir]
+    FileUtils.cp Dir['*.svg'], Settings[:yard_output_dir]
+    FileUtils.cp Dir['*.pdf'], Settings[:yard_output_dir]
+    FileUtils.cp Dir['*.png'], Settings[:yard_output_dir]
   end
 
   desc 'Generate Documentation from .md.erb, .md, .rb'
   task :doc => [:clean, :markdown_erb, :dia_to_svg, :yard]
 rescue LoadError
-  warn "yard or erb not available, yard documentation tasks not provided."
+  warn 'yard or erb not available, yard documentation tasks not provided.'
 end

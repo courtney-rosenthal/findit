@@ -1,6 +1,6 @@
 require 'logger'
-require 'atx-recycles-svc'
-require 'atx-recycles-svc/collection-route'
+#require 'atx-recycles-svc'
+#require 'atx-recycles-svc/collection-route'
 
 
 module ATXRecyclesSvc
@@ -8,8 +8,8 @@ module ATXRecyclesSvc
 
   class App
     
-    DATABASE = File.dirname(__FILE__) + "/data/collection_routes.db"
-    LIBSPATIALITE = "/usr/lib/libspatialite.so.3"
+    DATABASE = File.dirname(__FILE__) + '/data/collection_routes.db'
+    LIBSPATIALITE = '/usr/lib/libspatialite.so.3'
 
     def initialize(options = {})
   
