@@ -1,6 +1,7 @@
 require 'findit/database'
 require 'findit/location'
 require 'findit/base-feature'
+require 'findit/version'
 
 class String
   
