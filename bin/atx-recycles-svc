@@ -14,7 +14,7 @@ helpers do
   end
 end
 
-@@app = ATXRecyclesSvc::App.new
+@@app = ATXRecyclesSvc::App.new(:libspatialite => ENV['LIBSPATIALITE'])
 
 get "/svc" do
   params = request.env['rack.request.query_hash']
