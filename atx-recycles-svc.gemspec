@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'findit/version'
+require 'atx-recycles-svc/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "findit"
-  gem.version       = Findit::VERSION
+  gem.name          = "atx-recycles-svc"
+  gem.version       = ATXRecyclesSvc::VERSION
   gem.authors       = ["Open Austin"]
   gem.email         = ["openaustin@googlegroups.com"]
   gem.description   = %q{Austin Recycling Backend}
