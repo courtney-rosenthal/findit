@@ -100,7 +100,7 @@ helpers do
   end
 end
 
-@@findit = FindIt::App.new
+@@findit = FindIt::App.new(:libspatialite => ENV['LIBSPATIALITE'])
 
 get "/" do
   redirect to("/index.html")
