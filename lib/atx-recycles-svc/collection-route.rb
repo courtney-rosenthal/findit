@@ -45,8 +45,9 @@ module ATXRecyclesSvc
       }
       
       service = {}            
-      service[:day] = route[:SERVICE_DA].strip.upcase if route[:SERVICE_DA]
-      service[:week] = route[:SERVICE_WE].strip.upcase if route[:SERVICE_WE]
+      service[:day] = route[:SERVICE_DA].to_s.strip.upcase if route[:SERVICE_DA]
+      service[:week] = route[:SERVICE_WE].to_s.strip.upcase if route[:SERVICE_WE]
+      service[:nextservdate] = Date.jd(route[:NEXT_SERVI]).strftime("%m/%d/%Y") if route[:NEXT_SERVI]
       ret[:service] = service unless service.empty?
       
       ret
